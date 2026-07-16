@@ -361,6 +361,13 @@
             .edu-title {
                 font-weight: 600;
             }
+            .edu-title a {
+                color: inherit;
+                text-decoration: none;
+            }
+            .edu-title a:hover {
+                text-decoration: underline;
+            }
             .edu-meta {
                 font-size: 9pt;
                 color: var(--soft);
@@ -629,7 +636,7 @@
                 <p
                     class="summary"
                     data-i18n-html="profile.summary">
-                    Ingeniero de Software Full-Stack con más de 3 años de experiencia construyendo aplicaciones web de
+                    Ingeniero de Software Full-Stack con más de 4 años de experiencia construyendo aplicaciones web de
                     alto tráfico en producción para el sector aeronáutico. Experiencia comprobada en
                     <strong>desarrollo frontend con Angular 19 y TypeScript</strong>,
                     <strong>backend con C# / .NET y Umbraco</strong> y
@@ -865,6 +872,65 @@
             <section>
                 <h2
                     class="section-title"
+                    data-i18n="sections.courses">
+                    Cursos y certificados
+                </h2>
+
+                <div class="edu-item">
+                    <div class="edu-title">
+                        <a
+                            href="https://www.udemy.com/certificate/UC-6d318881-5582-47b8-b221-697d5541542f/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="courses.angular.title"
+                            >La Web Empieza Aquí: TypeScript, Angular, Storage, Firebase</a
+                        >
+                    </div>
+                    <div
+                        class="edu-meta"
+                        data-i18n="courses.angular.meta">
+                        Udemy · Tomas Garay · Mar. 2023
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-title">
+                        <a
+                            href="https://www.udemy.com/certificate/UC-f2d12c00-245e-4684-aff4-2bf2e1c37752/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="courses.flask.title"
+                            >Python y Flask. Desarrollo web y APIs tipo REST con Flask</a
+                        >
+                    </div>
+                    <div
+                        class="edu-meta"
+                        data-i18n="courses.flask.meta">
+                        Udemy · Redait Media · Mar. 2023
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-title">
+                        <a
+                            href="https://www.udemy.com/certificate/UC-56ee3c60-9c28-4f31-a3d5-128edf79ca51/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n="courses.sql.title"
+                            >SQL: Creación de Bases de Datos (De cero a profesional)</a
+                        >
+                    </div>
+                    <div
+                        class="edu-meta"
+                        data-i18n="courses.sql.meta">
+                        Udemy · DataBoosters Academy · Mar. 2023
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2
+                    class="section-title"
                     data-i18n="sections.education">
                     Formación académica
                 </h2>
@@ -1083,8 +1149,26 @@
                     'sections.languages': 'Languages',
                     'sections.softSkills': 'Soft skills',
 
+                    'sections.courses': 'Courses & Certifications',
+
+                    'courses.angular.title': 'Getting Started with the Web: TypeScript, Angular, Storage, Firebase',
+                    'courses.angular.meta': 'Udemy · Tomas Garay · Mar. 2023',
+                    'courses.flask.title': 'Python and Flask: Web Development and REST APIs with Flask',
+                    'courses.flask.meta': 'Udemy · Redait Media · Mar. 2023',
+                    'courses.sql.title': 'SQL: Database Creation (From Zero to Professional)',
+                    'courses.sql.meta': 'Udemy · DataBoosters Academy · Mar. 2023',
+
+                    'sections.courses': 'Courses & Certifications',
+
+                    'courses.angular.title': 'Getting Started with the Web: TypeScript, Angular, Storage, Firebase',
+                    'courses.angular.meta': 'Udemy · Tomas Garay · Mar. 2023',
+                    'courses.flask.title': 'Python and Flask: Web Development and REST APIs with Flask',
+                    'courses.flask.meta': 'Udemy · Redait Media · Mar. 2023',
+                    'courses.sql.title': 'SQL: Database Creation (From Zero to Professional)',
+                    'courses.sql.meta': 'Udemy · DataBoosters Academy · Mar. 2023',
+
                     'profile.summary':
-                        'Full-Stack Software Engineer with 3+ years of experience building high-traffic web ' +
+                        'Full-Stack Software Engineer with 4+ years of experience building high-traffic web ' +
                         'applications in production for the airline industry. Proven experience in ' +
                         '<strong>frontend development with Angular 19 and TypeScript</strong>, ' +
                         '<strong>backend with C# / .NET and Umbraco</strong>, and ' +
