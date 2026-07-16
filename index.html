@@ -389,6 +389,8 @@
                 right: 18px;
                 z-index: 10;
                 display: flex;
+                flex-direction: column;
+                align-items: stretch;
                 gap: 8px;
             }
             .print-bar button {
@@ -415,6 +417,15 @@
             }
             .print-bar button.secondary:hover {
                 background: #f0f0f0;
+            }
+            .print-bar button.language {
+                background: transparent;
+                color: var(--ink);
+                border: 1px solid var(--ink);
+            }
+            .print-bar button.language:hover {
+                background: var(--ink);
+                color: #fff;
             }
             .print-bar button:disabled {
                 opacity: 0.6;
@@ -499,6 +510,13 @@
     <body>
         <div class="print-bar no-print">
             <button
+                id="languageBtn"
+                type="button"
+                class="language"
+                onclick="toggleLanguage()">
+                English Version
+            </button>
+            <button
                 id="downloadPngBtn"
                 type="button"
                 class="secondary"
@@ -517,28 +535,100 @@
             <header>
                 <div>
                     <h1 class="name">Christian David Cruz Barrera</h1>
-                    <div class="role">Ingeniero de Software Full-Stack · Angular · .NET · Python · QA Automation</div>
+                    <div
+                        class="role"
+                        data-i18n="header.role">
+                        Ingeniero de Software Full-Stack · Angular · .NET · Python · QA Automation
+                    </div>
                 </div>
                 <div class="contact">
-                    <span><b>Tel.</b> +57 318 515 3771</span>
+                    <span
+                        ><b data-i18n="contact.tel">Tel.</b>
+                        <a
+                            href="https://wa.me/573185153771?text=Hola%20Christian%2C%20te%20contacto%20desde%20tu%20CV."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-i18n-aria-label="contact.whatsappAria"
+                            aria-label="Escribir por WhatsApp al +57 318 515 3771"
+                            >+57 318 515 3771</a
+                        ></span
+                    >
                     <span><a href="mailto:ccruzbarrera@gmail.com">ccruzbarrera@gmail.com</a></span>
-                    <span><a href="https://linkedin.com/in/davidcdcb">linkedin.com/in/davidcdcb</a></span>
-                    <span><a href="https://github.com/DavidCDCB">github.com/DavidCDCB</a></span>
-                    <span>Colombia</span>
+                    <span
+                        ><a
+                            href="https://linkedin.com/in/davidcdcb"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >linkedin.com/in/davidcdcb</a
+                        ></span
+                    >
+                    <span
+                        ><a
+                            href="https://github.com/DavidCDCB"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >github.com/DavidCDCB</a
+                        ></span
+                    >
+                    <span data-i18n="contact.country">Colombia</span>
                 </div>
             </header>
 
             <div class="highlights">
-                <div class="hl"><span class="num">3+</span><span class="lbl">Años de experiencia</span></div>
-                <div class="hl"><span class="num">1.177+</span><span class="lbl">Commits en producción</span></div>
-                <div class="hl"><span class="num">119+</span><span class="lbl">Pull Requests</span></div>
-                <div class="hl"><span class="num">3</span><span class="lbl">Frentes: Front · Back · QA</span></div>
-                <div class="hl"><span class="num">Millones</span><span class="lbl">De usuarios finales</span></div>
+                <div class="hl">
+                    <span class="num">3+</span
+                    ><span
+                        class="lbl"
+                        data-i18n="highlights.years"
+                        >Años de experiencia</span
+                    >
+                </div>
+                <div class="hl">
+                    <span class="num">1.177+</span
+                    ><span
+                        class="lbl"
+                        data-i18n="highlights.commits"
+                        >Commits en producción</span
+                    >
+                </div>
+                <div class="hl">
+                    <span class="num">119+</span
+                    ><span
+                        class="lbl"
+                        data-i18n="highlights.prs"
+                        >Pull Requests</span
+                    >
+                </div>
+                <div class="hl">
+                    <span class="num">3</span
+                    ><span
+                        class="lbl"
+                        data-i18n="highlights.areas"
+                        >Frentes: Front · Back · QA</span
+                    >
+                </div>
+                <div class="hl">
+                    <span
+                        class="num"
+                        data-i18n="highlights.millions"
+                        >Millones</span
+                    ><span
+                        class="lbl"
+                        data-i18n="highlights.endUsers"
+                        >De usuarios finales</span
+                    >
+                </div>
             </div>
 
             <section>
-                <h2 class="section-title">Perfil profesional</h2>
-                <p class="summary">
+                <h2
+                    class="section-title"
+                    data-i18n="sections.profile">
+                    Perfil profesional
+                </h2>
+                <p
+                    class="summary"
+                    data-i18n-html="profile.summary">
                     Ingeniero de Software Full-Stack con más de 3 años de experiencia construyendo aplicaciones web de
                     alto tráfico en producción para el sector aeronáutico. Experiencia comprobada en
                     <strong>desarrollo frontend con Angular 19 y TypeScript</strong>,
@@ -551,33 +641,59 @@
             </section>
 
             <section>
-                <h2 class="section-title">Competencias técnicas</h2>
+                <h2
+                    class="section-title"
+                    data-i18n="sections.skills">
+                    Competencias técnicas
+                </h2>
                 <div class="skill-row">
-                    <span class="skill-cat">Lenguajes</span
+                    <span
+                        class="skill-cat"
+                        data-i18n="skills.languages.label"
+                        >Lenguajes</span
                     ><span class="skill-val">C#, TypeScript, JavaScript, Python, SQL</span>
                 </div>
                 <div class="skill-row">
-                    <span class="skill-cat">Frontend</span
+                    <span
+                        class="skill-cat"
+                        data-i18n="skills.frontend.label"
+                        >Frontend</span
                     ><span class="skill-val">Angular 19, RxJS, Angular Signals, Storybook, SCSS / Sass, HTML5</span>
                 </div>
                 <div class="skill-row">
-                    <span class="skill-cat">Backend</span
+                    <span
+                        class="skill-cat"
+                        data-i18n="skills.backend.label"
+                        >Backend</span
                     ><span class="skill-val">.NET 6, ASP.NET Core, Umbraco 10, Node.js, APIs REST</span>
                 </div>
                 <div class="skill-row">
-                    <span class="skill-cat">QA / Testing</span
-                    ><span class="skill-val"
+                    <span
+                        class="skill-cat"
+                        data-i18n="skills.qa.label"
+                        >QA / Testing</span
+                    ><span
+                        class="skill-val"
+                        data-i18n="skills.qa.value"
                         >Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, pruebas unitarias y
                         end-to-end</span
                     >
                 </div>
                 <div class="skill-row">
-                    <span class="skill-cat">Datos e infra.</span
+                    <span
+                        class="skill-cat"
+                        data-i18n="skills.data.label"
+                        >Datos e infra.</span
                     ><span class="skill-val">SQL, SQLite, Redis, AWS (S3), Azure DevOps, CI/CD, Git</span>
                 </div>
                 <div class="skill-row">
-                    <span class="skill-cat">IA & prácticas</span
-                    ><span class="skill-val"
+                    <span
+                        class="skill-cat"
+                        data-i18n="skills.ai.label"
+                        >IA & prácticas</span
+                    ><span
+                        class="skill-val"
+                        data-i18n="skills.ai.value"
                         >Prompt Engineering, GitHub Copilot, arquitectura limpia/modular, i18n, accesibilidad (WCAG
                         2.2), refactorización</span
                     >
@@ -585,45 +701,63 @@
             </section>
 
             <section>
-                <h2 class="section-title">Experiencia profesional</h2>
+                <h2
+                    class="section-title"
+                    data-i18n="sections.experience">
+                    Experiencia profesional
+                </h2>
 
                 <div class="company">
                     <span class="company-name"
-                        >FLYR&nbsp;<span style="font-weight: 400; color: var(--soft); font-size: 9pt"
+                        >FLYR&nbsp;<span
+                            style="font-weight: 400; color: var(--soft); font-size: 9pt"
+                            data-i18n="experience.flyr.former"
                             >(anteriormente Newshore)</span
                         ></span
                     >
-                    <span class="company-meta">Colombia · Híbrido</span>
+                    <span
+                        class="company-meta"
+                        data-i18n="experience.flyr.location"
+                        >Colombia · Híbrido</span
+                    >
                 </div>
 
                 <div class="exp-item">
                     <div class="exp-head">
-                        <h3 class="exp-role">Ingeniero de Software</h3>
-                        <span class="exp-date">Diciembre 2023 – Presente</span>
+                        <h3
+                            class="exp-role"
+                            data-i18n="experience.flyr.role1.title">
+                            Ingeniero de Software
+                        </h3>
+                        <span
+                            class="exp-date"
+                            data-i18n="experience.flyr.role1.date"
+                            >Diciembre 2023 – Presente</span
+                        >
                     </div>
                     <ul class="bullets">
-                        <li>
+                        <li data-i18n="experience.flyr.role1.b1">
                             Miembro fundador de la reescritura completa (Angular 19, TypeScript) del portal web de venta
                             de vuelos y check-in en línea de una de las principales aerolíneas de Latinoamérica, usado a
                             diario por millones de pasajeros.
                         </li>
-                        <li>
+                        <li data-i18n="experience.flyr.role1.b2">
                             Desarrollo full-stack con Angular, C# / .NET (Umbraco) y Python; definición de arquitectura
                             modular y adopción de patrones actuales de Angular.
                         </li>
-                        <li>
+                        <li data-i18n="experience.flyr.role1.b3">
                             Diseño e implementación de suites de pruebas automatizadas end-to-end (Python + Selenium,
                             Page Object Model) y pruebas unitarias, reduciendo regresiones antes de producción.
                         </li>
-                        <li>
+                        <li data-i18n="experience.flyr.role1.b4">
                             Construcción de herramientas internas (Node.js, Bash, PowerShell): simulador de backend,
                             generadores de código, generador de datos de prueba y motor de ejecución por lotes.
                         </li>
-                        <li>
+                        <li data-i18n="experience.flyr.role1.b5">
                             Integración de agentes de IA y prompt engineering (GitHub Copilot) para acelerar el
                             onboarding y mantener las convenciones del proyecto.
                         </li>
-                        <li>
+                        <li data-i18n="experience.flyr.role1.b6">
                             Reducción sistemática de deuda técnica y hallazgos de calidad (SonarQube); soporte
                             multi-idioma (i18n) y accesibilidad (WCAG 2.2).
                         </li>
@@ -632,15 +766,23 @@
 
                 <div class="exp-item">
                     <div class="exp-head">
-                        <h3 class="exp-role">Desarrollador de Software</h3>
-                        <span class="exp-date">Junio 2023 – Diciembre 2023</span>
+                        <h3
+                            class="exp-role"
+                            data-i18n="experience.flyr.role2.title">
+                            Desarrollador de Software
+                        </h3>
+                        <span
+                            class="exp-date"
+                            data-i18n="experience.flyr.role2.date"
+                            >Junio 2023 – Diciembre 2023</span
+                        >
                     </div>
                     <ul class="bullets">
-                        <li>
+                        <li data-i18n="experience.flyr.role2.b1">
                             Diseño y desarrollo de interfaces de usuario con Angular y metodologías modernas de
                             frontend.
                         </li>
-                        <li>
+                        <li data-i18n="experience.flyr.role2.b2">
                             Colaboración en la redefinición de procesos y flujos de trabajo de los equipos de
                             desarrollo.
                         </li>
@@ -649,15 +791,25 @@
             </section>
 
             <section>
-                <h2 class="section-title">Proyectos destacados</h2>
+                <h2
+                    class="section-title"
+                    data-i18n="sections.projects">
+                    Proyectos destacados
+                </h2>
 
                 <div class="proj-item">
                     <div class="proj-head">
-                        <h3 class="proj-name">DCX UI+ — Portal web de aerolínea</h3>
+                        <h3
+                            class="proj-name"
+                            data-i18n="projects.dcx.name">
+                            DCX UI+ — Portal web de aerolínea
+                        </h3>
                         <span class="proj-role">Frontend Engineer</span>
                     </div>
                     <div class="proj-stack">Angular 19 · TypeScript · RxJS · Storybook</div>
-                    <p class="proj-desc">
+                    <p
+                        class="proj-desc"
+                        data-i18n="projects.dcx.desc">
                         Miembro fundador de la reescritura completa del portal de venta de vuelos y check-in (836
                         commits, 119+ PR). Módulo de pasajeros, herramientas internas de automatización e integración de
                         agentes de IA.
@@ -675,7 +827,9 @@
                         <span class="proj-role">Backend .NET</span>
                     </div>
                     <div class="proj-stack">C# · .NET 6 · Umbraco 10 · Prompt Engineering</div>
-                    <p class="proj-desc">
+                    <p
+                        class="proj-desc"
+                        data-i18n="projects.cms.desc">
                         Desarrollo de componentes de backend del CMS empresarial que alimenta el portal, más un
                         ecosistema de agentes de IA internos (+30 documentos de referencia) para acelerar el desarrollo
                         y el onboarding.
@@ -693,7 +847,9 @@
                         <span class="proj-role">QA Automation / SDET</span>
                     </div>
                     <div class="proj-stack">Python · Selenium WebDriver · PyTest · Allure</div>
-                    <p class="proj-desc">
+                    <p
+                        class="proj-desc"
+                        data-i18n="projects.qe.desc">
                         Suite de pruebas automatizadas end-to-end (305 commits, 20+ escenarios, patrón Page Object
                         Model) con herramientas internas de generación de datos de prueba y ejecución por lotes con
                         reintentos.
@@ -707,26 +863,76 @@
             </section>
 
             <section>
-                <h2 class="section-title">Formación académica</h2>
+                <h2
+                    class="section-title"
+                    data-i18n="sections.education">
+                    Formación académica
+                </h2>
                 <div class="edu-item">
-                    <div class="edu-title">Ingeniería en Sistemas y Computación</div>
-                    <div class="edu-meta">Universidad de Caldas · 2016 – 2023</div>
+                    <div
+                        class="edu-title"
+                        data-i18n="education.eng.title">
+                        Ingeniería en Sistemas y Computación
+                    </div>
+                    <div
+                        class="edu-meta"
+                        data-i18n="education.eng.meta">
+                        Universidad de Caldas · 2016 – 2023
+                    </div>
                 </div>
                 <div class="edu-item">
-                    <div class="edu-title">Técnico Profesional en Desarrollo de Software</div>
-                    <div class="edu-meta">SENA · Sistemas de información · 2014 – 2015</div>
+                    <div
+                        class="edu-title"
+                        data-i18n="education.tech.title">
+                        Técnico Profesional en Desarrollo de Software
+                    </div>
+                    <div
+                        class="edu-meta"
+                        data-i18n="education.tech.meta">
+                        SENA · Sistemas de información · 2014 – 2015
+                    </div>
                 </div>
             </section>
 
             <section>
-                <h2 class="section-title">Idiomas</h2>
-                <div class="inline-row"><span class="k">Español</span><span class="v">Nativo</span></div>
-                <div class="inline-row"><span class="k">Inglés</span><span class="v">Básico</span></div>
+                <h2
+                    class="section-title"
+                    data-i18n="sections.languages">
+                    Idiomas
+                </h2>
+                <div class="inline-row">
+                    <span
+                        class="k"
+                        data-i18n="languages.spanish.k"
+                        >Español</span
+                    ><span
+                        class="v"
+                        data-i18n="languages.spanish.v"
+                        >Nativo</span
+                    >
+                </div>
+                <div class="inline-row">
+                    <span
+                        class="k"
+                        data-i18n="languages.english.k"
+                        >Inglés</span
+                    ><span
+                        class="v"
+                        data-i18n="languages.english.v"
+                        >Básico</span
+                    >
+                </div>
             </section>
 
             <section>
-                <h2 class="section-title">Aptitudes</h2>
-                <p class="softskills">
+                <h2
+                    class="section-title"
+                    data-i18n="sections.softSkills">
+                    Aptitudes
+                </h2>
+                <p
+                    class="softskills"
+                    data-i18n="softSkills.list">
                     Trabajo en equipo y comunicación · Autoaprendizaje y adaptabilidad · Iniciativa y proactividad ·
                     Análisis y resolución de problemas · Planeación y organización · Compromiso y dedicación.
                 </p>
@@ -784,7 +990,7 @@
                     await task();
                 } catch (err) {
                     console.error(err);
-                    alert('No se pudo generar el archivo. Intenta nuevamente.');
+                    alert(I18N.strings.buttons.errorGeneric);
                 } finally {
                     btn.disabled = false;
                     btn.textContent = originalText;
@@ -793,7 +999,7 @@
 
             async function downloadPdf() {
                 const btn = document.getElementById('downloadPdfBtn');
-                await withButtonState(btn, 'Generando PDF...', async () => {
+                await withButtonState(btn, I18N.strings.buttons.generatingPdf, async () => {
                     const canvas = await captureSheetCanvas();
 
                     const { jsPDF } = window.jspdf;
@@ -830,7 +1036,7 @@
 
             async function downloadPng() {
                 const btn = document.getElementById('downloadPngBtn');
-                await withButtonState(btn, 'Generando PNG...', async () => {
+                await withButtonState(btn, I18N.strings.buttons.generatingPng, async () => {
                     const canvas = await captureSheetCanvas();
 
                     // canvas.toBlob es más eficiente que toDataURL para archivos grandes
@@ -845,6 +1051,225 @@
                     document.body.removeChild(link);
                     URL.revokeObjectURL(url);
                 });
+            }
+
+            // ---------- Internacionalización dinámica ----------
+
+            /**
+             * Diccionario de traducciones. Cada clave es una ruta con notación de puntos
+             * que debe coincidir con el atributo data-i18n / data-i18n-html del HTML.
+             * El HTML se escribe en español (idioma base) y este objeto solo contiene la
+             * traducción a inglés.
+             */
+            const TRANSLATIONS = {
+                en: {
+                    'header.role': 'Full-Stack Software Engineer · Angular · .NET · Python · QA Automation',
+                    'contact.tel': 'Phone',
+                    'contact.country': 'Colombia',
+                    'contact.whatsappAria': 'Message on WhatsApp at +57 318 515 3771',
+
+                    'highlights.years': 'Years of experience',
+                    'highlights.commits': 'Production commits',
+                    'highlights.prs': 'Pull Requests',
+                    'highlights.areas': 'Areas: Front · Back · QA',
+                    'highlights.millions': 'Millions',
+                    'highlights.endUsers': 'Of end users',
+
+                    'sections.profile': 'Professional profile',
+                    'sections.skills': 'Technical skills',
+                    'sections.experience': 'Professional experience',
+                    'sections.projects': 'Featured projects',
+                    'sections.education': 'Education',
+                    'sections.languages': 'Languages',
+                    'sections.softSkills': 'Soft skills',
+
+                    'profile.summary':
+                        'Full-Stack Software Engineer with 3+ years of experience building high-traffic web ' +
+                        'applications in production for the airline industry. Proven experience in ' +
+                        '<strong>frontend development with Angular 19 and TypeScript</strong>, ' +
+                        '<strong>backend with C# / .NET and Umbraco</strong>, and ' +
+                        '<strong>test automation (QA Automation / SDET) with Python and Selenium</strong>. ' +
+                        'Founding member of the rewrite of a platform used daily by millions of passengers. ' +
+                        'Focused on clean code, scalable architectures, automated testing and the practical ' +
+                        'application of Artificial Intelligence to daily development.',
+
+                    'skills.languages.label': 'Languages',
+                    'skills.frontend.label': 'Frontend',
+                    'skills.backend.label': 'Backend',
+                    'skills.qa.label': 'QA / Testing',
+                    'skills.qa.value':
+                        'Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, unit and end-to-end tests',
+                    'skills.data.label': 'Data & infra.',
+                    'skills.ai.label': 'AI & practices',
+                    'skills.ai.value':
+                        'Prompt Engineering, GitHub Copilot, clean/modular architecture, i18n, accessibility (WCAG 2.2), refactoring',
+
+                    'experience.flyr.former': '(formerly Newshore)',
+                    'experience.flyr.location': 'Colombia · Hybrid',
+                    'experience.flyr.role1.title': 'Software Engineer',
+                    'experience.flyr.role1.date': 'December 2023 – Present',
+                    'experience.flyr.role1.b1':
+                        'Founding member of the full rewrite (Angular 19, TypeScript) of the flight booking and ' +
+                        'online check-in web portal of one of the leading airlines in Latin America, used daily ' +
+                        'by millions of passengers.',
+                    'experience.flyr.role1.b2':
+                        'Full-stack development with Angular, C# / .NET (Umbraco) and Python; modular ' +
+                        'architecture definition and adoption of current Angular patterns.',
+                    'experience.flyr.role1.b3':
+                        'Design and implementation of automated end-to-end test suites (Python + Selenium, Page ' +
+                        'Object Model) and unit tests, reducing regressions before production.',
+                    'experience.flyr.role1.b4':
+                        'Built internal tools (Node.js, Bash, PowerShell): backend simulator, code generators, ' +
+                        'test data generator, and batch execution engine.',
+                    'experience.flyr.role1.b5':
+                        'Integration of AI agents and prompt engineering (GitHub Copilot) to accelerate ' +
+                        'onboarding and enforce project conventions.',
+                    'experience.flyr.role1.b6':
+                        'Systematic reduction of technical debt and quality findings (SonarQube); multi-language ' +
+                        'support (i18n) and accessibility (WCAG 2.2).',
+                    'experience.flyr.role2.title': 'Software Developer',
+                    'experience.flyr.role2.date': 'June 2023 – December 2023',
+                    'experience.flyr.role2.b1':
+                        'Design and development of user interfaces with Angular and modern frontend methodologies.',
+                    'experience.flyr.role2.b2':
+                        'Collaboration in the redefinition of processes and workflows of the development teams.',
+
+                    'projects.dcx.name': 'DCX UI+ — Airline web portal',
+                    'projects.dcx.desc':
+                        'Founding member of the full rewrite of the flight booking and check-in portal (836 ' +
+                        'commits, 119+ PRs). Passengers module, internal automation tooling and AI agent integration.',
+                    'projects.cms.desc':
+                        'Development of backend components of the enterprise CMS that powers the portal, plus an ' +
+                        'ecosystem of internal AI agents (30+ reference documents) to accelerate development and onboarding.',
+                    'projects.qe.desc':
+                        'Automated end-to-end test suite (305 commits, 20+ scenarios, Page Object Model pattern) ' +
+                        'with internal tools for test data generation and batch execution with retries.',
+
+                    'education.eng.title': 'Systems and Computer Engineering',
+                    'education.eng.meta': 'Universidad de Caldas · 2016 – 2023',
+                    'education.tech.title': 'Professional Technician in Software Development',
+                    'education.tech.meta': 'SENA · Information Systems · 2014 – 2015',
+
+                    'languages.spanish.k': 'Spanish',
+                    'languages.spanish.v': 'Native',
+                    'languages.english.k': 'English',
+                    'languages.english.v': 'Basic',
+
+                    'softSkills.list':
+                        'Teamwork and communication · Self-learning and adaptability · Initiative and proactivity · ' +
+                        'Analysis and problem solving · Planning and organization · Commitment and dedication.',
+                },
+            };
+
+            /**
+             * Textos "estáticos" que usa la propia UI (no vienen del HTML) por idioma:
+             * títulos del documento, textos de botones, etc.
+             */
+            const UI_STRINGS = {
+                es: {
+                    title: 'Christian David Cruz Barrera — Ingeniero de Software Full-Stack (Angular, .NET, Python)',
+                    languageBtn: 'English Version',
+                    buttons: {
+                        downloadPdf: 'Descargar PDF',
+                        downloadPng: 'Descargar PNG',
+                        generatingPdf: 'Generando PDF...',
+                        generatingPng: 'Generando PNG...',
+                        errorGeneric: 'No se pudo generar el archivo. Intenta nuevamente.',
+                    },
+                },
+                en: {
+                    title: 'Christian David Cruz Barrera — Full-Stack Software Engineer (Angular, .NET, Python)',
+                    languageBtn: 'Versión en español',
+                    buttons: {
+                        downloadPdf: 'Download PDF',
+                        downloadPng: 'Download PNG',
+                        generatingPdf: 'Generating PDF...',
+                        generatingPng: 'Generating PNG...',
+                        errorGeneric: 'Could not generate the file. Please try again.',
+                    },
+                },
+            };
+
+            /**
+             * Estado global mínimo de i18n. Guardamos el idioma actual y el snapshot
+             * del contenido original en español para poder restaurar sin recargar.
+             */
+            const I18N = {
+                current: 'es',
+                originalSnapshot: null,
+                get strings() {
+                    return UI_STRINGS[this.current];
+                },
+            };
+
+            /**
+             * Captura el contenido español actual antes de aplicar cualquier traducción.
+             * Se ejecuta una sola vez, cuando se cambia de idioma por primera vez.
+             */
+            function snapshotOriginalContent() {
+                if (I18N.originalSnapshot) return;
+                const snapshot = {};
+                document.querySelectorAll('[data-i18n]').forEach((el) => {
+                    snapshot['text:' + el.dataset.i18n] = el.textContent;
+                });
+                document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+                    snapshot['html:' + el.dataset.i18nHtml] = el.innerHTML;
+                });
+                document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+                    snapshot['aria:' + el.dataset.i18nAriaLabel] = el.getAttribute('aria-label');
+                });
+                I18N.originalSnapshot = snapshot;
+            }
+
+            /**
+             * Aplica un idioma. Para 'es' restaura el snapshot original.
+             * Para 'en' aplica la tabla TRANSLATIONS.en usando el atributo data-i18n(-html|-aria-label).
+             */
+            function applyLanguage(lang) {
+                snapshotOriginalContent();
+
+                const dict = lang === 'es' ? null : TRANSLATIONS[lang];
+
+                document.querySelectorAll('[data-i18n]').forEach((el) => {
+                    const key = el.dataset.i18n;
+                    if (dict && dict[key] !== undefined) {
+                        el.textContent = dict[key];
+                    } else if (lang === 'es') {
+                        el.textContent = I18N.originalSnapshot['text:' + key];
+                    }
+                });
+
+                document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+                    const key = el.dataset.i18nHtml;
+                    if (dict && dict[key] !== undefined) {
+                        el.innerHTML = dict[key];
+                    } else if (lang === 'es') {
+                        el.innerHTML = I18N.originalSnapshot['html:' + key];
+                    }
+                });
+
+                document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+                    const key = el.dataset.i18nAriaLabel;
+                    if (dict && dict[key] !== undefined) {
+                        el.setAttribute('aria-label', dict[key]);
+                    } else if (lang === 'es') {
+                        el.setAttribute('aria-label', I18N.originalSnapshot['aria:' + key]);
+                    }
+                });
+
+                // Actualiza textos "propios" de la UI y metadatos del documento
+                const ui = UI_STRINGS[lang];
+                document.documentElement.lang = lang;
+                document.title = ui.title;
+                document.getElementById('languageBtn').textContent = ui.languageBtn;
+                document.getElementById('downloadPdfBtn').textContent = ui.buttons.downloadPdf;
+                document.getElementById('downloadPngBtn').textContent = ui.buttons.downloadPng;
+
+                I18N.current = lang;
+            }
+
+            function toggleLanguage() {
+                applyLanguage(I18N.current === 'es' ? 'en' : 'es');
             }
         </script>
     </body>
