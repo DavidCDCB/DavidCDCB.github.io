@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Christian David Cruz Barrera — Ingeniero de Software Full-Stack (Angular, .NET, Python)</title>
+        <meta
+            name="author"
+            content="Christian David Cruz Barrera" />
+        <meta
+            name="description"
+            content="Ingeniero de Software Full-Stack con 3+ años de experiencia. Angular 19, TypeScript, C#/.NET, Umbraco, Python, Selenium, QA Automation/SDET, IA aplicada al desarrollo. Colombia." />
+        <meta
+            name="keywords"
+            content="Ingeniero de Software, Full-Stack Developer, Frontend, Backend, Angular, TypeScript, RxJS, C#, .NET, Umbraco, Python, Selenium, QA Automation, SDET, Page Object Model, PyTest, NUnit, REST APIs, Redis, AWS, Azure DevOps, CI/CD, Git, Prompt Engineering, GitHub Copilot, Colombia" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Christian David Cruz Barrera",
+                "jobTitle": "Ingeniero de Software Full-Stack",
+                "email": "mailto:ccruzbarrera@gmail.com",
+                "telephone": "+57-318-515-3771",
+                "url": "https://github.com/DavidCDCB",
+                "address": { "@type": "PostalAddress", "addressCountry": "Colombia" },
+                "sameAs": ["https://linkedin.com/in/davidcdcb", "https://github.com/DavidCDCB"],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Universidad de Caldas"
+                },
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "FLYR (anteriormente Newshore)"
+                },
+                "knowsLanguage": ["Español (nativo)", "Inglés (básico)"],
+                "knowsAbout": [
+                    "Desarrollo Full-Stack",
+                    "Angular 19",
+                    "TypeScript",
+                    "RxJS",
+                    "Angular Signals",
+                    "Storybook",
+                    "SCSS/Sass",
+                    "C#",
+                    ".NET 6",
+                    "ASP.NET Core",
+                    "Umbraco 10",
+                    "Node.js",
+                    "APIs REST",
+                    "Python",
+                    "Selenium WebDriver",
+                    "PyTest",
+                    "NUnit",
+                    "Allure",
+                    "Page Object Model",
+                    "QA Automation",
+                    "SDET",
+                    "Pruebas end-to-end",
+                    "Pruebas unitarias",
+                    "SQL",
+                    "Redis",
+                    "AWS",
+                    "Azure DevOps",
+                    "CI/CD",
+                    "Git",
+                    "Arquitectura de software",
+                    "Refactorización",
+                    "Gestión de deuda técnica",
+                    "Accesibilidad WCAG 2.2",
+                    "Internacionalización (i18n)",
+                    "Prompt Engineering",
+                    "GitHub Copilot",
+                    "IA aplicada al desarrollo"
+                ]
+            }
+        </script>
+
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+            rel="stylesheet" />
+        <style>
+            :root {
+                --ink: #1a1a1a;
+                --strong: #000;
+                --muted: #5f6368;
+                --soft: #767676;
+                --line: #e4e4e4;
+                --rule: #c9c9c9;
+                --band: #f5f5f5;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            body {
+                background: #f3f3f4;
+                font-family:
+                    'Inter',
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    'Segoe UI',
+                    sans-serif;
+                color: var(--ink);
+                line-height: 1.5;
+            }
+
+            .sheet {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 24px auto;
+                background: #fff;
+                padding: 17mm 18mm 16mm;
+                box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
+                font-size: 10.5pt;
+            }
+
+            /* Encabezado */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: 24px;
+                padding-bottom: 14px;
+                border-bottom: 1.5px solid var(--strong);
+            }
+            h1.name {
+                font-family: 'Newsreader', Georgia, serif;
+                font-weight: 500;
+                font-size: 27pt;
+                line-height: 1.05;
+                letter-spacing: 0.3px;
+                color: var(--strong);
+            }
+            .role {
+                margin-top: 6px;
+                font-size: 9.5pt;
+                font-weight: 500;
+                letter-spacing: 1.6px;
+                text-transform: uppercase;
+                color: var(--muted);
+            }
+            .contact {
+                text-align: right;
+                font-size: 9pt;
+                line-height: 1.7;
+                color: var(--muted);
+                white-space: nowrap;
+            }
+            .contact a {
+                color: var(--muted);
+                text-decoration: none;
+            }
+            .contact span {
+                display: block;
+            }
+            .contact b {
+                color: var(--ink);
+                font-weight: 600;
+            }
+
+            /* Franja de highlights */
+            .highlights {
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+                margin-top: 14px;
+                padding: 9px 14px;
+                background: var(--band);
+                border: 1px solid var(--line);
+                border-radius: 4px;
+            }
+            .hl {
+                text-align: center;
+                flex: 1;
+            }
+            .hl .num {
+                display: block;
+                font-weight: 700;
+                font-size: 12pt;
+                color: var(--strong);
+                font-variant-numeric: tabular-nums;
+            }
+            .hl .lbl {
+                font-size: 7.8pt;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                color: var(--soft);
+            }
+            .hl + .hl {
+                border-left: 1px solid var(--line);
+            }
+
+            /* Secciones */
+            section {
+                margin-top: 19px;
+            }
+            h2.section-title {
+                font-size: 9pt;
+                font-weight: 700;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+                color: var(--strong);
+                padding-bottom: 5px;
+                margin-bottom: 11px;
+                border-bottom: 1px solid var(--line);
+            }
+            .summary {
+                color: #2c2c2c;
+                text-align: justify;
+            }
+
+            /* Skills */
+            .skill-row {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 6px;
+                align-items: baseline;
+            }
+            .skill-row:last-child {
+                margin-bottom: 0;
+            }
+            .skill-cat {
+                flex: 0 0 132px;
+                font-size: 8.6pt;
+                font-weight: 700;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+                color: var(--muted);
+            }
+            .skill-val {
+                color: #2a2a2a;
+                flex: 1;
+            }
+
+            /* Experiencia */
+            .company {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 1px;
+            }
+            .company-name {
+                font-weight: 700;
+                font-size: 11pt;
+                color: var(--strong);
+            }
+            .company-meta {
+                font-size: 9pt;
+                color: var(--soft);
+            }
+            .exp-item {
+                margin-bottom: 13px;
+                break-inside: avoid;
+            }
+            .exp-item:last-child {
+                margin-bottom: 0;
+            }
+            .exp-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin: 6px 0 5px;
+            }
+            h3.exp-role {
+                font-weight: 600;
+                font-size: 10.5pt;
+            }
+            .exp-date {
+                font-size: 9pt;
+                color: var(--soft);
+                letter-spacing: 0.3px;
+            }
+            ul.bullets {
+                list-style: none;
+            }
+            ul.bullets li {
+                position: relative;
+                padding-left: 14px;
+                margin-bottom: 4px;
+                color: #2c2c2c;
+            }
+            ul.bullets li::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0.62em;
+                width: 4px;
+                height: 4px;
+                background: var(--rule);
+                border-radius: 50%;
+            }
+
+            /* Proyectos */
+            .proj-item {
+                margin-bottom: 12px;
+                break-inside: avoid;
+            }
+            .proj-item:last-child {
+                margin-bottom: 0;
+            }
+            .proj-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 12px;
+            }
+            h3.proj-name {
+                font-weight: 700;
+                font-size: 10.5pt;
+                color: var(--strong);
+            }
+            .proj-role {
+                font-size: 8.5pt;
+                font-weight: 600;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+                color: var(--soft);
+                white-space: nowrap;
+            }
+            .proj-stack {
+                font-size: 8.6pt;
+                letter-spacing: 0.4px;
+                color: var(--muted);
+                margin: 2px 0 3px;
+            }
+            .proj-desc {
+                color: #2c2c2c;
+                margin-bottom: 3px;
+            }
+            .proj-link {
+                font-size: 8.6pt;
+                color: var(--muted);
+                text-decoration: none;
+                word-break: break-all;
+                border-bottom: 1px solid var(--line);
+            }
+
+            /* Formación / Idiomas / Aptitudes */
+            .edu-item {
+                margin-bottom: 9px;
+                break-inside: avoid;
+            }
+            .edu-item:last-child {
+                margin-bottom: 0;
+            }
+            .edu-title {
+                font-weight: 600;
+            }
+            .edu-meta {
+                font-size: 9pt;
+                color: var(--soft);
+                margin-top: 1px;
+            }
+            .inline-row {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 4px;
+            }
+            .inline-row .k {
+                flex: 0 0 132px;
+                font-weight: 600;
+            }
+            .inline-row .v {
+                color: var(--soft);
+            }
+            .softskills {
+                color: #2c2c2c;
+            }
+
+            /* Botones descarga */
+            .print-bar {
+                position: fixed;
+                top: 18px;
+                right: 18px;
+                z-index: 10;
+                display: flex;
+                gap: 8px;
+            }
+            .print-bar button {
+                font-family: inherit;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.4px;
+                padding: 9px 16px;
+                border: none;
+                border-radius: 6px;
+                background: var(--ink);
+                color: #fff;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+                transition: background 0.15s ease;
+            }
+            .print-bar button:hover {
+                background: #000;
+            }
+            .print-bar button.secondary {
+                background: #fff;
+                color: var(--ink);
+                border: 1px solid var(--rule);
+            }
+            .print-bar button.secondary:hover {
+                background: #f0f0f0;
+            }
+            .print-bar button:disabled {
+                opacity: 0.6;
+                cursor: wait;
+            }
+
+            @page {
+                size: A4;
+                margin: 14mm 15mm;
+            }
+            /* Estado activo mientras se genera el PDF (aplicado por JS a <body>) */
+            body.pdf-export {
+                background: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            body.pdf-export .sheet {
+                width: 794px !important; /* 210mm exactos a 96 DPI */
+                margin: 0 !important;
+                box-shadow: none !important;
+                position: relative;
+                left: 0;
+                top: 0;
+            }
+            body.pdf-export .no-print {
+                display: none !important;
+            }
+            @media print {
+                body {
+                    background: #fff;
+                }
+                .sheet {
+                    width: auto;
+                    min-height: 0;
+                    margin: 0;
+                    padding: 0;
+                    box-shadow: none;
+                    font-size: 10pt;
+                }
+                .no-print {
+                    display: none !important;
+                }
+                a {
+                    color: inherit;
+                }
+                section {
+                    break-inside: avoid;
+                }
+                .highlights {
+                    background: var(--band) !important;
+                }
+            }
+            @media (max-width: 640px) {
+                .sheet {
+                    width: 100%;
+                    padding: 22px 20px;
+                }
+                header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+                .contact {
+                    text-align: left;
+                    white-space: normal;
+                }
+                .highlights {
+                    flex-wrap: wrap;
+                }
+                .skill-row,
+                .inline-row {
+                    flex-direction: column;
+                    gap: 1px;
+                }
+                .skill-cat,
+                .inline-row .k {
+                    flex-basis: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="print-bar no-print">
+            <button
+                id="downloadPngBtn"
+                type="button"
+                class="secondary"
+                onclick="downloadPng()">
+                Descargar PNG
+            </button>
+            <button
+                id="downloadPdfBtn"
+                type="button"
+                onclick="downloadPdf()">
+                Descargar PDF
+            </button>
+        </div>
+
+        <div class="sheet">
+            <header>
+                <div>
+                    <h1 class="name">Christian David Cruz Barrera</h1>
+                    <div class="role">Ingeniero de Software Full-Stack · Angular · .NET · Python · QA Automation</div>
+                </div>
+                <div class="contact">
+                    <span><b>Tel.</b> +57 318 515 3771</span>
+                    <span><a href="mailto:ccruzbarrera@gmail.com">ccruzbarrera@gmail.com</a></span>
+                    <span><a href="https://linkedin.com/in/davidcdcb">linkedin.com/in/davidcdcb</a></span>
+                    <span><a href="https://github.com/DavidCDCB">github.com/DavidCDCB</a></span>
+                    <span>Colombia</span>
+                </div>
+            </header>
+
+            <div class="highlights">
+                <div class="hl"><span class="num">3+</span><span class="lbl">Años de experiencia</span></div>
+                <div class="hl"><span class="num">1.177+</span><span class="lbl">Commits en producción</span></div>
+                <div class="hl"><span class="num">119+</span><span class="lbl">Pull Requests</span></div>
+                <div class="hl"><span class="num">3</span><span class="lbl">Frentes: Front · Back · QA</span></div>
+                <div class="hl"><span class="num">Millones</span><span class="lbl">De usuarios finales</span></div>
+            </div>
+
+            <section>
+                <h2 class="section-title">Perfil profesional</h2>
+                <p class="summary">
+                    Ingeniero de Software Full-Stack con más de 3 años de experiencia construyendo aplicaciones web de
+                    alto tráfico en producción para el sector aeronáutico. Experiencia comprobada en
+                    <strong>desarrollo frontend con Angular 19 y TypeScript</strong>,
+                    <strong>backend con C# / .NET y Umbraco</strong> y
+                    <strong>automatización de pruebas (QA Automation / SDET) con Python y Selenium</strong>. Miembro
+                    fundador de la reescritura de una plataforma utilizada a diario por millones de pasajeros. Perfil
+                    orientado a código limpio, arquitecturas escalables, pruebas automatizadas y la aplicación práctica
+                    de la Inteligencia Artificial al desarrollo diario.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Competencias técnicas</h2>
+                <div class="skill-row">
+                    <span class="skill-cat">Lenguajes</span
+                    ><span class="skill-val">C#, TypeScript, JavaScript, Python, SQL</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-cat">Frontend</span
+                    ><span class="skill-val">Angular 19, RxJS, Angular Signals, Storybook, SCSS / Sass, HTML5</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-cat">Backend</span
+                    ><span class="skill-val">.NET 6, ASP.NET Core, Umbraco 10, Node.js, APIs REST</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-cat">QA / Testing</span
+                    ><span class="skill-val"
+                        >Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, pruebas unitarias y
+                        end-to-end</span
+                    >
+                </div>
+                <div class="skill-row">
+                    <span class="skill-cat">Datos e infra.</span
+                    ><span class="skill-val">SQL, SQLite, Redis, AWS (S3), Azure DevOps, CI/CD, Git</span>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-cat">IA & prácticas</span
+                    ><span class="skill-val"
+                        >Prompt Engineering, GitHub Copilot, arquitectura limpia/modular, i18n, accesibilidad (WCAG
+                        2.2), refactorización</span
+                    >
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Experiencia profesional</h2>
+
+                <div class="company">
+                    <span class="company-name"
+                        >FLYR&nbsp;<span style="font-weight: 400; color: var(--soft); font-size: 9pt"
+                            >(anteriormente Newshore)</span
+                        ></span
+                    >
+                    <span class="company-meta">Colombia · Híbrido</span>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-head">
+                        <h3 class="exp-role">Ingeniero de Software</h3>
+                        <span class="exp-date">Diciembre 2023 – Presente</span>
+                    </div>
+                    <ul class="bullets">
+                        <li>
+                            Miembro fundador de la reescritura completa (Angular 19, TypeScript) del portal web de venta
+                            de vuelos y check-in en línea de una de las principales aerolíneas de Latinoamérica, usado a
+                            diario por millones de pasajeros.
+                        </li>
+                        <li>
+                            Desarrollo full-stack con Angular, C# / .NET (Umbraco) y Python; definición de arquitectura
+                            modular y adopción de patrones actuales de Angular.
+                        </li>
+                        <li>
+                            Diseño e implementación de suites de pruebas automatizadas end-to-end (Python + Selenium,
+                            Page Object Model) y pruebas unitarias, reduciendo regresiones antes de producción.
+                        </li>
+                        <li>
+                            Construcción de herramientas internas (Node.js, Bash, PowerShell): simulador de backend,
+                            generadores de código, generador de datos de prueba y motor de ejecución por lotes.
+                        </li>
+                        <li>
+                            Integración de agentes de IA y prompt engineering (GitHub Copilot) para acelerar el
+                            onboarding y mantener las convenciones del proyecto.
+                        </li>
+                        <li>
+                            Reducción sistemática de deuda técnica y hallazgos de calidad (SonarQube); soporte
+                            multi-idioma (i18n) y accesibilidad (WCAG 2.2).
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-head">
+                        <h3 class="exp-role">Desarrollador de Software</h3>
+                        <span class="exp-date">Junio 2023 – Diciembre 2023</span>
+                    </div>
+                    <ul class="bullets">
+                        <li>
+                            Diseño y desarrollo de interfaces de usuario con Angular y metodologías modernas de
+                            frontend.
+                        </li>
+                        <li>
+                            Colaboración en la redefinición de procesos y flujos de trabajo de los equipos de
+                            desarrollo.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Proyectos destacados</h2>
+
+                <div class="proj-item">
+                    <div class="proj-head">
+                        <h3 class="proj-name">DCX UI+ — Portal web de aerolínea</h3>
+                        <span class="proj-role">Frontend Engineer</span>
+                    </div>
+                    <div class="proj-stack">Angular 19 · TypeScript · RxJS · Storybook</div>
+                    <p class="proj-desc">
+                        Miembro fundador de la reescritura completa del portal de venta de vuelos y check-in (836
+                        commits, 119+ PR). Módulo de pasajeros, herramientas internas de automatización e integración de
+                        agentes de IA.
+                    </p>
+                    <a
+                        class="proj-link"
+                        href="https://gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee"
+                        >gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee</a
+                    >
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-head">
+                        <h3 class="proj-name">CMS Avianca (NS.Booking.Web)</h3>
+                        <span class="proj-role">Backend .NET</span>
+                    </div>
+                    <div class="proj-stack">C# · .NET 6 · Umbraco 10 · Prompt Engineering</div>
+                    <p class="proj-desc">
+                        Desarrollo de componentes de backend del CMS empresarial que alimenta el portal, más un
+                        ecosistema de agentes de IA internos (+30 documentos de referencia) para acelerar el desarrollo
+                        y el onboarding.
+                    </p>
+                    <a
+                        class="proj-link"
+                        href="https://gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411"
+                        >gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411</a
+                    >
+                </div>
+
+                <div class="proj-item">
+                    <div class="proj-head">
+                        <h3 class="proj-name">Avianca QE Automation Suite</h3>
+                        <span class="proj-role">QA Automation / SDET</span>
+                    </div>
+                    <div class="proj-stack">Python · Selenium WebDriver · PyTest · Allure</div>
+                    <p class="proj-desc">
+                        Suite de pruebas automatizadas end-to-end (305 commits, 20+ escenarios, patrón Page Object
+                        Model) con herramientas internas de generación de datos de prueba y ejecución por lotes con
+                        reintentos.
+                    </p>
+                    <a
+                        class="proj-link"
+                        href="https://gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5"
+                        >gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5</a
+                    >
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Formación académica</h2>
+                <div class="edu-item">
+                    <div class="edu-title">Ingeniería en Sistemas y Computación</div>
+                    <div class="edu-meta">Universidad de Caldas · 2016 – 2023</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-title">Técnico Profesional en Desarrollo de Software</div>
+                    <div class="edu-meta">SENA · Sistemas de información · 2014 – 2015</div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Idiomas</h2>
+                <div class="inline-row"><span class="k">Español</span><span class="v">Nativo</span></div>
+                <div class="inline-row"><span class="k">Inglés</span><span class="v">Básico</span></div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Aptitudes</h2>
+                <p class="softskills">
+                    Trabajo en equipo y comunicación · Autoaprendizaje y adaptabilidad · Iniciativa y proactividad ·
+                    Análisis y resolución de problemas · Planeación y organización · Compromiso y dedicación.
+                </p>
+            </section>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script>
+            // Ancho A4 exacto en píxeles CSS a 96 DPI: 210mm * 96 / 25.4 ≈ 793.7 → 794
+            const A4_WIDTH_PX = 794;
+
+            /**
+             * Aplica los estilos de exportación, espera fuentes/layout y captura el .sheet.
+             * Devuelve el <canvas> resultante. Se encarga de limpiar el estado en cualquier caso.
+             */
+            async function captureSheetCanvas() {
+                document.body.classList.add('pdf-export');
+
+                try {
+                    if (document.fonts && document.fonts.ready) {
+                        await document.fonts.ready;
+                    }
+
+                    // Doble rAF: espera a que el navegador aplique el layout con la clase pdf-export
+                    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+
+                    const element = document.querySelector('.sheet');
+
+                    return await html2canvas(element, {
+                        scale: 2,
+                        useCORS: true,
+                        letterRendering: true,
+                        backgroundColor: '#ffffff',
+                        width: A4_WIDTH_PX,
+                        windowWidth: A4_WIDTH_PX,
+                        x: 0,
+                        y: 0,
+                        scrollX: 0,
+                        scrollY: -window.scrollY,
+                    });
+                } finally {
+                    document.body.classList.remove('pdf-export');
+                }
+            }
+
+            /**
+             * Envuelve una función asíncrona con el estado "cargando" de un botón.
+             */
+            async function withButtonState(btn, loadingText, task) {
+                const originalText = btn.textContent;
+                btn.disabled = true;
+                btn.textContent = loadingText;
+                try {
+                    await task();
+                } catch (err) {
+                    console.error(err);
+                    alert('No se pudo generar el archivo. Intenta nuevamente.');
+                } finally {
+                    btn.disabled = false;
+                    btn.textContent = originalText;
+                }
+            }
+
+            async function downloadPdf() {
+                const btn = document.getElementById('downloadPdfBtn');
+                await withButtonState(btn, 'Generando PDF...', async () => {
+                    const canvas = await captureSheetCanvas();
+
+                    const { jsPDF } = window.jspdf;
+                    const pdf = new jsPDF({
+                        unit: 'mm',
+                        format: 'a4',
+                        orientation: 'portrait',
+                        compress: true,
+                    });
+
+                    const pdfWidth = pdf.internal.pageSize.getWidth(); // 210
+                    const pdfHeight = pdf.internal.pageSize.getHeight(); // 297
+                    const imgWidth = pdfWidth;
+                    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                    const imgData = canvas.toDataURL('image/jpeg', 0.98);
+
+                    let heightLeft = imgHeight;
+                    let position = 0;
+
+                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined, 'FAST');
+                    heightLeft -= pdfHeight;
+
+                    while (heightLeft > 0) {
+                        position = heightLeft - imgHeight;
+                        pdf.addPage();
+                        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined, 'FAST');
+                        heightLeft -= pdfHeight;
+                    }
+
+                    pdf.save('Christian-David-Cruz-Barrera-CV.pdf');
+                });
+            }
+
+            async function downloadPng() {
+                const btn = document.getElementById('downloadPngBtn');
+                await withButtonState(btn, 'Generando PNG...', async () => {
+                    const canvas = await captureSheetCanvas();
+
+                    // canvas.toBlob es más eficiente que toDataURL para archivos grandes
+                    const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'Christian-David-Cruz-Barrera-CV.png';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                });
+            }
+        </script>
+    </body>
+</html>
