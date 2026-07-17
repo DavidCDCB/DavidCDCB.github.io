@@ -13,7 +13,8 @@ createApp({
             // Estado de carga de datos
             loading: true,
             loadError: false,
-            // Estado del botón de descarga PNG
+            // Estado de los botones de descarga
+            generatingPdf: false,
             generatingPng: false,
         };
     },
@@ -84,14 +85,47 @@ createApp({
             }
         },
 
-        // Descarga el PDF estático que vive en la raíz del proyecto.
-        downloadPdf() {
-            const link = document.createElement('a');
-            link.href = './CV_Christian_Cruz.pdf';
-            link.download = 'CV_Christian_Cruz.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        async downloadPdf() {
+            if (this.generatingPdf) return;
+            this.generatingPdf = true;
+            try {
+                const canvas = await this.captureSheetCanvas();
+
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF({
+                    unit: 'mm',
+                    format: 'a4',
+                    orientation: 'portrait',
+                    compress: true,
+                });
+
+                const pdfWidth = pdf.internal.pageSize.getWidth(); // 210
+                const pdfHeight = pdf.internal.pageSize.getHeight(); // 297
+                const imgWidth = pdfWidth;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                const imgData = canvas.toDataURL('image/jpeg', 0.98);
+
+                let heightLeft = imgHeight;
+                let position = 0;
+
+                pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined, 'FAST');
+                heightLeft -= pdfHeight;
+
+                while (heightLeft > 0) {
+                    position = heightLeft - imgHeight;
+                    pdf.addPage();
+                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined, 'FAST');
+                    heightLeft -= pdfHeight;
+                }
+
+                pdf.save('Christian-David-Cruz-Barrera-CV.pdf');
+            } catch (err) {
+                console.error(err);
+                alert(this.c.ui.errorGeneric);
+            } finally {
+                this.generatingPdf = false;
+            }
         },
 
         async downloadPng() {
