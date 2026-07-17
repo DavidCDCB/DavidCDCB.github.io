@@ -405,9 +405,28 @@ body.pdf-export .no-print {
     }
 }
 @media (max-width: 640px) {
+    /* La barra de acciones deja de flotar y pasa al flujo normal para no tapar el contenido */
+    .print-bar {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 16px 16px 0;
+    }
+    .print-bar button {
+        flex: 1 1 auto;
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
     .sheet {
         width: 100%;
+        margin: 12px auto;
         padding: 22px 20px;
+    }
+    h1.name {
+        font-size: 22pt;
     }
     header {
         flex-direction: column;
@@ -420,6 +439,16 @@ body.pdf-export .no-print {
     }
     .highlights {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+    .hl {
+        flex: 1 1 28%;
+        padding: 4px 2px;
+    }
+    /* Evita bordes sueltos cuando los highlights se envuelven en varias filas */
+    .hl + .hl {
+        border-left: none;
     }
     .skill-row,
     .inline-row {
