@@ -1,0 +1,286 @@
+{
+    "es": {
+        "meta": {
+            "title": "Christian David Cruz Barrera — Ingeniero de Software Full-Stack (Angular, .NET, Python)",
+            "htmlLang": "es",
+            "toggleLabel": "English Version"
+        },
+        "ui": {
+            "downloadPdf": "Descargar PDF",
+            "downloadPng": "Descargar PNG",
+            "generatingPdf": "Generando PDF...",
+            "generatingPng": "Generando PNG...",
+            "errorGeneric": "No se pudo generar el archivo. Intenta nuevamente."
+        },
+        "header": {
+            "name": "Christian David Cruz Barrera",
+            "role": "Ingeniero de Software Full-Stack · Angular · .NET · Python · QA Automation",
+            "contact": {
+                "telLabel": "Tel.",
+                "phone": "+57 318 515 3771",
+                "whatsapp": "https://wa.me/573185153771?text=Hola%20Christian%2C%20te%20contacto%20desde%20tu%20CV.",
+                "whatsappAria": "Escribir por WhatsApp al +57 318 515 3771",
+                "email": "ccruzbarrera@gmail.com",
+                "linkedin": "linkedin.com/in/davidcdcb",
+                "linkedinUrl": "https://linkedin.com/in/davidcdcb",
+                "github": "github.com/DavidCDCB",
+                "githubUrl": "https://github.com/DavidCDCB",
+                "country": "Colombia"
+            }
+        },
+        "highlights": [
+            { "num": "4+", "lbl": "Años de experiencia" },
+            { "num": "1.177+", "lbl": "Commits en producción" },
+            { "num": "119+", "lbl": "Pull Requests" },
+            { "num": "3", "lbl": "Frentes: Front · Back · QA" },
+            { "num": "Millones", "lbl": "De usuarios finales" }
+        ],
+        "sections": {
+            "profile": "Perfil profesional",
+            "skills": "Competencias técnicas",
+            "experience": "Experiencia profesional",
+            "projects": "Proyectos destacados",
+            "courses": "Cursos y certificados",
+            "education": "Formación académica",
+            "languages": "Idiomas",
+            "softSkills": "Aptitudes"
+        },
+        "profile": "Ingeniero de Software Full-Stack con más de 4 años de experiencia construyendo aplicaciones web de misión crítica y alto tráfico para el sector aeronáutico, usadas a diario por millones de pasajeros. Miembro fundador de la reescritura de la plataforma de Avianca, con experiencia comprobada en <strong>frontend con Angular 20 y TypeScript</strong>, <strong>backend con C# / .NET y Umbraco</strong> y <strong>automatización de pruebas (QA Automation / SDET) con Python y Selenium</strong>. Pionero en la organización en la <strong>aplicación de IA y prompt engineering al desarrollo diario</strong>. Orientado a código limpio, arquitecturas escalables, pruebas automatizadas y la reducción sistemática de deuda técnica.",
+        "skills": [
+            { "cat": "Lenguajes", "val": "C#, TypeScript, JavaScript, Python, SQL" },
+            { "cat": "Frontend", "val": "Angular 20, RxJS, Angular Signals, Storybook, SCSS / Sass, HTML5" },
+            { "cat": "Backend", "val": ".NET 6, ASP.NET Core, Umbraco 10, Node.js, APIs REST" },
+            { "cat": "QA / Testing", "val": "Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, pruebas unitarias y end-to-end" },
+            { "cat": "Datos e infra.", "val": "SQL, SQLite, Redis, AWS (S3), Azure DevOps, CI/CD, Git" },
+            { "cat": "IA & prácticas", "val": "Prompt Engineering, GitHub Copilot, arquitectura limpia/modular, i18n, accesibilidad (WCAG 2.2), refactorización" }
+        ],
+        "experience": {
+            "company": "FLYR",
+            "former": "(anteriormente Newshore)",
+            "location": "Colombia · Híbrido",
+            "roles": [
+                {
+                    "title": "Ingeniero de Software",
+                    "date": "Diciembre 2023 – Presente",
+                    "bullets": [
+                        "Miembro fundador de la reescritura de la plataforma web de Avianca (Angular 20, TypeScript), usada a diario por millones de pasajeros: 100+ funcionalidades y 61 refactorizaciones entregadas en más de 20 módulos de negocio (pasajeros, asientos, pagos, tarjeta de embarque, lealtad).",
+                        "Responsable del módulo de pasajeros —uno de los más complejos del sistema (580+ archivos)— con validaciones dinámicas por tipo de viajero y del flujo de check-in gestionado; aportes a librerías compartidas, capa de APIs y design system que sostienen todo el portal.",
+                        "Desarrollo full-stack con Angular, C# / .NET (Umbraco 10) y Python, definiendo la arquitectura modular y adoptando patrones actuales de Angular (Signals, Storybook).",
+                        "Lideré la actualización del proyecto a Angular 20, migrando la plataforma de producción a la nueva versión mayor sin interrumpir el servicio.",
+                        "Diseño de 20+ escenarios de pruebas E2E (Python + Selenium, Page Object Model con 10 Page Objects) y pruebas unitarias, más un generador automático de reservas de prueba con reintentos que reduce la preparación manual a un solo comando.",
+                        "Diseñé un ecosistema de agentes de IA internos —tutor «DCX Instructor», 3 catálogos de conocimiento (+30 documentos) y protocolo MCP—, una de las primeras iniciativas de la organización en aplicar prompt engineering al desarrollo diario.",
+                        "Ownership del tooling interno del equipo (94 aportes en Node.js, Bash y PowerShell); reducción sistemática de deuda técnica (SonarQube), soporte multi-idioma (i18n) y accesibilidad (WCAG 2.2)."
+                    ]
+                },
+                {
+                    "title": "Desarrollador de Software",
+                    "date": "Junio 2023 – Diciembre 2023",
+                    "bullets": [
+                        "Desarrollo de interfaces de usuario con Angular aplicando metodologías modernas de frontend y componentes reutilizables.",
+                        "Colaboración en la redefinición de procesos y flujos de trabajo de los equipos de desarrollo, mejorando la consistencia del código entregado."
+                    ]
+                }
+            ]
+        },
+        "projects": [
+            {
+                "name": "DCX UI+ — Portal web de aerolínea",
+                "role": "Frontend Engineer",
+                "stack": "Angular 20 · TypeScript · RxJS · Storybook",
+                "desc": "Miembro fundador de la reescritura completa del portal (836 commits, 119+ PR, 100+ funcionalidades, 61 refactorizaciones). Ownership del módulo de pasajeros (580+ archivos), del tooling interno del equipo (94 aportes) y de un ecosistema de agentes de IA (tutor «DCX Instructor» + MCP).",
+                "link": "gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee",
+                "url": "https://gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee"
+            },
+            {
+                "name": "CMS Avianca (NS.Booking.Web)",
+                "role": "Backend .NET",
+                "stack": "C# · .NET 6 · Umbraco 10 · Prompt Engineering",
+                "desc": "Componentes de backend del CMS empresarial (.NET 6, Umbraco 10) que alimenta el portal, con soporte multi-idioma (ES/EN/FR/PT). Diseñé un ecosistema de agentes de IA internos: 3 catálogos de conocimiento (+30 documentos) y el tutor «Umbraco DCX Instructor», pionero en prompt engineering aplicado al desarrollo en la organización.",
+                "link": "gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411",
+                "url": "https://gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411"
+            },
+            {
+                "name": "Avianca QE Automation Suite",
+                "role": "QA Automation / SDET",
+                "stack": "Python · Selenium WebDriver · PyTest · Allure",
+                "desc": "Suite de pruebas E2E (305 commits, 112 funcionalidades, 20+ escenarios, 10 Page Objects) para el portal en Angular 20. Ownership del generador automático de reservas de prueba (Python + SQLite + Excel) y del motor de ejecución por lotes con reintentos y reportes Allure.",
+                "link": "gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5",
+                "url": "https://gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5"
+            }
+        ],
+        "courses": [
+            {
+                "title": "La Web Empieza Aquí: TypeScript, Angular, Storage, Firebase",
+                "url": "https://www.udemy.com/certificate/UC-6d318881-5582-47b8-b221-697d5541542f/",
+                "meta": "Udemy · Tomas Garay · Mar. 2023"
+            },
+            {
+                "title": "Python y Flask. Desarrollo web y APIs tipo REST con Flask",
+                "url": "https://www.udemy.com/certificate/UC-f2d12c00-245e-4684-aff4-2bf2e1c37752/",
+                "meta": "Udemy · Redait Media · Mar. 2023"
+            },
+            {
+                "title": "SQL: Creación de Bases de Datos (De cero a profesional)",
+                "url": "https://www.udemy.com/certificate/UC-56ee3c60-9c28-4f31-a3d5-128edf79ca51/",
+                "meta": "Udemy · DataBoosters Academy · Mar. 2023"
+            }
+        ],
+        "education": [
+            {
+                "title": "Ingeniería en Sistemas y Computación",
+                "meta": "Universidad de Caldas · 2016 – 2023"
+            },
+            {
+                "title": "Técnico Profesional en Desarrollo de Software",
+                "meta": "SENA · Sistemas de información · 2014 – 2015"
+            }
+        ],
+        "languages": [
+            { "k": "Español", "v": "Nativo" },
+            { "k": "Inglés", "v": "Básico (A2 MCER) · lectura técnica" }
+        ],
+        "softSkills": "Trabajo en equipo y comunicación · Autoaprendizaje y adaptabilidad · Iniciativa y proactividad · Análisis y resolución de problemas · Planeación y organización · Compromiso y dedicación."
+    },
+    "en": {
+        "meta": {
+            "title": "Christian David Cruz Barrera — Full-Stack Software Engineer (Angular, .NET, Python)",
+            "htmlLang": "en",
+            "toggleLabel": "Versión en español"
+        },
+        "ui": {
+            "downloadPdf": "Download PDF",
+            "downloadPng": "Download PNG",
+            "generatingPdf": "Generating PDF...",
+            "generatingPng": "Generating PNG...",
+            "errorGeneric": "Could not generate the file. Please try again."
+        },
+        "header": {
+            "name": "Christian David Cruz Barrera",
+            "role": "Full-Stack Software Engineer · Angular · .NET · Python · QA Automation",
+            "contact": {
+                "telLabel": "Phone",
+                "phone": "+57 318 515 3771",
+                "whatsapp": "https://wa.me/573185153771?text=Hola%20Christian%2C%20te%20contacto%20desde%20tu%20CV.",
+                "whatsappAria": "Message on WhatsApp at +57 318 515 3771",
+                "email": "ccruzbarrera@gmail.com",
+                "linkedin": "linkedin.com/in/davidcdcb",
+                "linkedinUrl": "https://linkedin.com/in/davidcdcb",
+                "github": "github.com/DavidCDCB",
+                "githubUrl": "https://github.com/DavidCDCB",
+                "country": "Colombia"
+            }
+        },
+        "highlights": [
+            { "num": "4+", "lbl": "Years of experience" },
+            { "num": "1.177+", "lbl": "Production commits" },
+            { "num": "119+", "lbl": "Pull Requests" },
+            { "num": "3", "lbl": "Areas: Front · Back · QA" },
+            { "num": "Millions", "lbl": "Of end users" }
+        ],
+        "sections": {
+            "profile": "Professional profile",
+            "skills": "Technical skills",
+            "experience": "Professional experience",
+            "projects": "Featured projects",
+            "courses": "Courses & Certifications",
+            "education": "Education",
+            "languages": "Languages",
+            "softSkills": "Soft skills"
+        },
+        "profile": "Full-Stack Software Engineer with 4+ years of experience building mission-critical, high-traffic web applications for the airline industry, used daily by millions of passengers. Founding member of the rewrite of Avianca's platform, with proven experience in <strong>frontend with Angular 20 and TypeScript</strong>, <strong>backend with C# / .NET and Umbraco</strong>, and <strong>test automation (QA Automation / SDET) with Python and Selenium</strong>. Pioneer within the organization in <strong>applying AI and prompt engineering to daily development</strong>. Focused on clean code, scalable architectures, automated testing and systematic reduction of technical debt.",
+        "skills": [
+            { "cat": "Languages", "val": "C#, TypeScript, JavaScript, Python, SQL" },
+            { "cat": "Frontend", "val": "Angular 20, RxJS, Angular Signals, Storybook, SCSS / Sass, HTML5" },
+            { "cat": "Backend", "val": ".NET 6, ASP.NET Core, Umbraco 10, Node.js, APIs REST" },
+            { "cat": "QA / Testing", "val": "Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, unit and end-to-end tests" },
+            { "cat": "Data & infra.", "val": "SQL, SQLite, Redis, AWS (S3), Azure DevOps, CI/CD, Git" },
+            { "cat": "AI & practices", "val": "Prompt Engineering, GitHub Copilot, clean/modular architecture, i18n, accessibility (WCAG 2.2), refactoring" }
+        ],
+        "experience": {
+            "company": "FLYR",
+            "former": "(formerly Newshore)",
+            "location": "Colombia · Hybrid",
+            "roles": [
+                {
+                    "title": "Software Engineer",
+                    "date": "December 2023 – Present",
+                    "bullets": [
+                        "Founding member of the rewrite of Avianca's web platform (Angular 20, TypeScript), used daily by millions of passengers: 100+ features and 61 refactors delivered across 20+ business modules (passengers, seats, payments, boarding pass, loyalty).",
+                        "Owner of the passengers module —one of the most complex in the system (580+ files)— with dynamic validations per traveler type and of the managed check-in flow; contributions to shared libraries, the API layer and the design system that underpin the whole portal.",
+                        "Full-stack development with Angular, C# / .NET (Umbraco 10) and Python, defining the modular architecture and adopting current Angular patterns (Signals, Storybook).",
+                        "Led the project's upgrade to Angular 20, migrating the production platform to the new major version with no service disruption.",
+                        "Designed 20+ end-to-end test scenarios (Python + Selenium, Page Object Model with 10 Page Objects) and unit tests, plus an automatic test-booking generator with retries that reduces manual setup to a single command.",
+                        "Designed an ecosystem of internal AI agents —«DCX Instructor» tutor, 3 knowledge catalogs (30+ documents) and MCP protocol—, one of the organization's first initiatives applying prompt engineering to daily development.",
+                        "Ownership of the team's internal tooling (94 contributions in Node.js, Bash and PowerShell); systematic reduction of technical debt (SonarQube), multi-language support (i18n) and accessibility (WCAG 2.2)."
+                    ]
+                },
+                {
+                    "title": "Software Developer",
+                    "date": "June 2023 – December 2023",
+                    "bullets": [
+                        "Development of user interfaces with Angular applying modern frontend methodologies and reusable components.",
+                        "Collaboration in the redefinition of processes and workflows of the development teams, improving the consistency of delivered code."
+                    ]
+                }
+            ]
+        },
+        "projects": [
+            {
+                "name": "DCX UI+ — Airline web portal",
+                "role": "Frontend Engineer",
+                "stack": "Angular 20 · TypeScript · RxJS · Storybook",
+                "desc": "Founding member of the full rewrite of the portal (836 commits, 119+ PRs, 100+ features, 61 refactors). Ownership of the passengers module (580+ files), the team's internal tooling (94 contributions) and an AI agent ecosystem («DCX Instructor» tutor + MCP).",
+                "link": "gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee",
+                "url": "https://gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee"
+            },
+            {
+                "name": "CMS Avianca (NS.Booking.Web)",
+                "role": "Backend .NET",
+                "stack": "C# · .NET 6 · Umbraco 10 · Prompt Engineering",
+                "desc": "Backend components of the enterprise CMS (.NET 6, Umbraco 10) that powers the portal, with multi-language support (ES/EN/FR/PT). Designed an ecosystem of internal AI agents: 3 knowledge catalogs (30+ documents) and the «Umbraco DCX Instructor» tutor, a pioneering prompt-engineering initiative within the organization.",
+                "link": "gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411",
+                "url": "https://gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411"
+            },
+            {
+                "name": "Avianca QE Automation Suite",
+                "role": "QA Automation / SDET",
+                "stack": "Python · Selenium WebDriver · PyTest · Allure",
+                "desc": "End-to-end test suite (305 commits, 112 features, 20+ scenarios, 10 Page Objects) for the Angular 20 portal. Ownership of the automatic test-booking generator (Python + SQLite + Excel) and the batch execution engine with retries and Allure reports.",
+                "link": "gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5",
+                "url": "https://gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5"
+            }
+        ],
+        "courses": [
+            {
+                "title": "Getting Started with the Web: TypeScript, Angular, Storage, Firebase",
+                "url": "https://www.udemy.com/certificate/UC-6d318881-5582-47b8-b221-697d5541542f/",
+                "meta": "Udemy · Tomas Garay · Mar. 2023"
+            },
+            {
+                "title": "Python and Flask: Web Development and REST APIs with Flask",
+                "url": "https://www.udemy.com/certificate/UC-f2d12c00-245e-4684-aff4-2bf2e1c37752/",
+                "meta": "Udemy · Redait Media · Mar. 2023"
+            },
+            {
+                "title": "SQL: Database Creation (From Zero to Professional)",
+                "url": "https://www.udemy.com/certificate/UC-56ee3c60-9c28-4f31-a3d5-128edf79ca51/",
+                "meta": "Udemy · DataBoosters Academy · Mar. 2023"
+            }
+        ],
+        "education": [
+            {
+                "title": "Systems and Computer Engineering",
+                "meta": "Universidad de Caldas · 2016 – 2023"
+            },
+            {
+                "title": "Professional Technician in Software Development",
+                "meta": "SENA · Information Systems · 2014 – 2015"
+            }
+        ],
+        "languages": [
+            { "k": "Spanish", "v": "Native" },
+            { "k": "English", "v": "Basic (A2 CEFR) · technical reading" }
+        ],
+        "softSkills": "Teamwork and communication · Self-learning and adaptability · Initiative and proactivity · Analysis and problem solving · Planning and organization · Commitment and dedication."
+    }
+}

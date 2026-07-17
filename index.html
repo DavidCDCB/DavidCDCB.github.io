@@ -2,1359 +2,206 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Christian David Cruz Barrera — Ingeniero de Software Full-Stack (Angular, .NET, Python)</title>
-        <meta
-            name="author"
-            content="Christian David Cruz Barrera" />
+        <meta name="author" content="Christian David Cruz Barrera" />
         <meta
             name="description"
-            content="Ingeniero de Software Full-Stack con 4+ años de experiencia. Angular 19, TypeScript, C#/.NET, Umbraco, Python, Selenium, QA Automation/SDET, IA aplicada al desarrollo. Colombia." />
+            content="Ingeniero de Software Full-Stack con 4+ años de experiencia. Angular 20, TypeScript, C#/.NET, Umbraco, Python, Selenium, QA Automation/SDET, IA aplicada al desarrollo. Colombia." />
         <meta
             name="keywords"
             content="Ingeniero de Software, Full-Stack Developer, Frontend, Backend, Angular, TypeScript, RxJS, C#, .NET, Umbraco, Python, Selenium, QA Automation, SDET, Page Object Model, PyTest, NUnit, REST APIs, Redis, AWS, Azure DevOps, CI/CD, Git, Prompt Engineering, GitHub Copilot, Colombia" />
 
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "Christian David Cruz Barrera",
-                "jobTitle": "Ingeniero de Software Full-Stack",
-                "email": "mailto:ccruzbarrera@gmail.com",
-                "telephone": "+57-318-515-3771",
-                "url": "https://github.com/DavidCDCB",
-                "address": { "@type": "PostalAddress", "addressCountry": "Colombia" },
-                "sameAs": ["https://linkedin.com/in/davidcdcb", "https://github.com/DavidCDCB"],
-                "alumniOf": {
-                    "@type": "CollegeOrUniversity",
-                    "name": "Universidad de Caldas"
-                },
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "FLYR (anteriormente Newshore)"
-                },
-                "knowsLanguage": ["Español (nativo)", "Inglés (básico)"],
-                "knowsAbout": [
-                    "Desarrollo Full-Stack",
-                    "Angular 19",
-                    "TypeScript",
-                    "RxJS",
-                    "Angular Signals",
-                    "Storybook",
-                    "SCSS/Sass",
-                    "C#",
-                    ".NET 6",
-                    "ASP.NET Core",
-                    "Umbraco 10",
-                    "Node.js",
-                    "APIs REST",
-                    "Python",
-                    "Selenium WebDriver",
-                    "PyTest",
-                    "NUnit",
-                    "Allure",
-                    "Page Object Model",
-                    "QA Automation",
-                    "SDET",
-                    "Pruebas end-to-end",
-                    "Pruebas unitarias",
-                    "SQL",
-                    "Redis",
-                    "AWS",
-                    "Azure DevOps",
-                    "CI/CD",
-                    "Git",
-                    "Arquitectura de software",
-                    "Refactorización",
-                    "Gestión de deuda técnica",
-                    "Accesibilidad WCAG 2.2",
-                    "Internacionalización (i18n)",
-                    "Prompt Engineering",
-                    "GitHub Copilot",
-                    "IA aplicada al desarrollo"
-                ]
-            }
-        </script>
-
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com" />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
             rel="stylesheet" />
-        <style>
-            :root {
-                --ink: #1a1a1a;
-                --strong: #000;
-                --muted: #5f6368;
-                --soft: #767676;
-                --line: #e4e4e4;
-                --rule: #c9c9c9;
-                --band: #f5f5f5;
-            }
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
-            html {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            body {
-                background: #f3f3f4;
-                font-family:
-                    'Inter',
-                    -apple-system,
-                    BlinkMacSystemFont,
-                    'Segoe UI',
-                    sans-serif;
-                color: var(--ink);
-                line-height: 1.5;
-            }
 
-            .sheet {
-                width: 210mm;
-                min-height: 297mm;
-                margin: 24px auto;
-                background: #fff;
-                padding: 17mm 18mm 16mm;
-                box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
-                font-size: 10.5pt;
-            }
-
-            /* Encabezado */
-            header {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                gap: 24px;
-                padding-bottom: 14px;
-                border-bottom: 1.5px solid var(--strong);
-            }
-            h1.name {
-                font-family: 'Newsreader', Georgia, serif;
-                font-weight: 500;
-                font-size: 27pt;
-                line-height: 1.05;
-                letter-spacing: 0.3px;
-                color: var(--strong);
-            }
-            .role {
-                margin-top: 6px;
-                font-size: 9.5pt;
-                font-weight: 500;
-                letter-spacing: 1.6px;
-                text-transform: uppercase;
-                color: var(--muted);
-            }
-            .contact {
-                text-align: right;
-                font-size: 9pt;
-                line-height: 1.7;
-                color: var(--muted);
-                white-space: nowrap;
-            }
-            .contact a {
-                color: var(--muted);
-                text-decoration: none;
-            }
-            .contact span {
-                display: block;
-            }
-            .contact b {
-                color: var(--ink);
-                font-weight: 600;
-            }
-
-            /* Franja de highlights */
-            .highlights {
-                display: flex;
-                justify-content: space-between;
-                gap: 8px;
-                margin-top: 14px;
-                padding: 9px 14px;
-                background: var(--band);
-                border: 1px solid var(--line);
-                border-radius: 4px;
-            }
-            .hl {
-                text-align: center;
-                flex: 1;
-            }
-            .hl .num {
-                display: block;
-                font-weight: 700;
-                font-size: 12pt;
-                color: var(--strong);
-                font-variant-numeric: tabular-nums;
-            }
-            .hl .lbl {
-                font-size: 7.8pt;
-                letter-spacing: 0.5px;
-                text-transform: uppercase;
-                color: var(--soft);
-            }
-            .hl + .hl {
-                border-left: 1px solid var(--line);
-            }
-
-            /* Secciones */
-            section {
-                margin-top: 19px;
-            }
-            h2.section-title {
-                font-size: 9pt;
-                font-weight: 700;
-                letter-spacing: 2.2px;
-                text-transform: uppercase;
-                color: var(--strong);
-                padding-bottom: 5px;
-                margin-bottom: 11px;
-                border-bottom: 1px solid var(--line);
-            }
-            .summary {
-                color: #2c2c2c;
-                text-align: justify;
-            }
-
-            /* Skills */
-            .skill-row {
-                display: flex;
-                gap: 10px;
-                margin-bottom: 6px;
-                align-items: baseline;
-            }
-            .skill-row:last-child {
-                margin-bottom: 0;
-            }
-            .skill-cat {
-                flex: 0 0 132px;
-                font-size: 8.6pt;
-                font-weight: 700;
-                letter-spacing: 0.6px;
-                text-transform: uppercase;
-                color: var(--muted);
-            }
-            .skill-val {
-                color: #2a2a2a;
-                flex: 1;
-            }
-
-            /* Experiencia */
-            .company {
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-                margin-bottom: 1px;
-            }
-            .company-name {
-                font-weight: 700;
-                font-size: 11pt;
-                color: var(--strong);
-            }
-            .company-meta {
-                font-size: 9pt;
-                color: var(--soft);
-            }
-            .exp-item {
-                margin-bottom: 13px;
-                break-inside: avoid;
-            }
-            .exp-item:last-child {
-                margin-bottom: 0;
-            }
-            .exp-head {
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-                margin: 6px 0 5px;
-            }
-            h3.exp-role {
-                font-weight: 600;
-                font-size: 10.5pt;
-            }
-            .exp-date {
-                font-size: 9pt;
-                color: var(--soft);
-                letter-spacing: 0.3px;
-            }
-            ul.bullets {
-                list-style: none;
-            }
-            ul.bullets li {
-                position: relative;
-                padding-left: 14px;
-                margin-bottom: 4px;
-                color: #2c2c2c;
-            }
-            ul.bullets li::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0.62em;
-                width: 4px;
-                height: 4px;
-                background: var(--rule);
-                border-radius: 50%;
-            }
-
-            /* Proyectos */
-            .proj-item {
-                margin-bottom: 12px;
-                break-inside: avoid;
-            }
-            .proj-item:last-child {
-                margin-bottom: 0;
-            }
-            .proj-head {
-                display: flex;
-                justify-content: space-between;
-                align-items: baseline;
-                gap: 12px;
-            }
-            h3.proj-name {
-                font-weight: 700;
-                font-size: 10.5pt;
-                color: var(--strong);
-            }
-            .proj-role {
-                font-size: 8.5pt;
-                font-weight: 600;
-                letter-spacing: 0.6px;
-                text-transform: uppercase;
-                color: var(--soft);
-                white-space: nowrap;
-            }
-            .proj-stack {
-                font-size: 8.6pt;
-                letter-spacing: 0.4px;
-                color: var(--muted);
-                margin: 2px 0 3px;
-            }
-            .proj-desc {
-                color: #2c2c2c;
-                margin-bottom: 3px;
-            }
-            .proj-link {
-                font-size: 8.6pt;
-                color: var(--muted);
-                text-decoration: none;
-                word-break: break-all;
-                border-bottom: 1px solid var(--line);
-            }
-
-            /* Formación / Idiomas / Aptitudes */
-            .edu-item {
-                margin-bottom: 9px;
-                break-inside: avoid;
-            }
-            .edu-item:last-child {
-                margin-bottom: 0;
-            }
-            .edu-title {
-                font-weight: 600;
-            }
-            .edu-title a {
-                color: inherit;
-                text-decoration: none;
-            }
-            .edu-title a:hover {
-                text-decoration: underline;
-            }
-            .edu-meta {
-                font-size: 9pt;
-                color: var(--soft);
-                margin-top: 1px;
-            }
-            .inline-row {
-                display: flex;
-                gap: 8px;
-                margin-bottom: 4px;
-            }
-            .inline-row .k {
-                flex: 0 0 132px;
-                font-weight: 600;
-            }
-            .inline-row .v {
-                color: var(--soft);
-            }
-            .softskills {
-                color: #2c2c2c;
-            }
-
-            /* Botones descarga */
-            .print-bar {
-                position: fixed;
-                top: 18px;
-                right: 18px;
-                z-index: 10;
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                gap: 8px;
-            }
-            .print-bar button {
-                font-family: inherit;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: 0.4px;
-                padding: 9px 16px;
-                border: none;
-                border-radius: 6px;
-                background: var(--ink);
-                color: #fff;
-                cursor: pointer;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
-                transition: background 0.15s ease;
-            }
-            .print-bar button:hover {
-                background: #000;
-            }
-            .print-bar button.secondary {
-                background: #fff;
-                color: var(--ink);
-                border: 1px solid var(--rule);
-            }
-            .print-bar button.secondary:hover {
-                background: #f0f0f0;
-            }
-            .print-bar button.language {
-                background: transparent;
-                color: var(--ink);
-                border: 1px solid var(--ink);
-            }
-            .print-bar button.language:hover {
-                background: var(--ink);
-                color: #fff;
-            }
-            .print-bar button:disabled {
-                opacity: 0.6;
-                cursor: wait;
-            }
-
-            @page {
-                size: A4;
-                margin: 14mm 15mm;
-            }
-            /* Estado activo mientras se genera el PDF (aplicado por JS a <body>) */
-            body.pdf-export {
-                background: #fff;
-                margin: 0;
-                padding: 0;
-            }
-            body.pdf-export .sheet {
-                width: 794px !important; /* 210mm exactos a 96 DPI */
-                margin: 0 !important;
-                box-shadow: none !important;
-                position: relative;
-                left: 0;
-                top: 0;
-            }
-            body.pdf-export .no-print {
-                display: none !important;
-            }
-            @media print {
-                body {
-                    background: #fff;
-                }
-                .sheet {
-                    width: auto;
-                    min-height: 0;
-                    margin: 0;
-                    padding: 0;
-                    box-shadow: none;
-                    font-size: 10pt;
-                }
-                .no-print {
-                    display: none !important;
-                }
-                a {
-                    color: inherit;
-                }
-                section {
-                    break-inside: avoid;
-                }
-                .highlights {
-                    background: var(--band) !important;
-                }
-            }
-            @media (max-width: 640px) {
-                .sheet {
-                    width: 100%;
-                    padding: 22px 20px;
-                }
-                header {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 10px;
-                }
-                .contact {
-                    text-align: left;
-                    white-space: normal;
-                }
-                .highlights {
-                    flex-wrap: wrap;
-                }
-                .skill-row,
-                .inline-row {
-                    flex-direction: column;
-                    gap: 1px;
-                }
-                .skill-cat,
-                .inline-row .k {
-                    flex-basis: auto;
-                }
-            }
-        </style>
+        <!-- Tailwind CSS (CDN) -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Estilos propios de la hoja A4 -->
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <div class="print-bar no-print">
-            <button
-                id="languageBtn"
-                type="button"
-                class="language"
-                onclick="toggleLanguage()">
-                English Version
-            </button>
-            <button
-                id="downloadPngBtn"
-                type="button"
-                class="secondary"
-                onclick="downloadPng()">
-                Descargar PNG
-            </button>
-            <button
-                id="downloadPdfBtn"
-                type="button"
-                onclick="downloadPdf()">
-                Descargar PDF
-            </button>
-        </div>
-
-        <div class="sheet">
-            <header>
-                <div>
-                    <h1 class="name">Christian David Cruz Barrera</h1>
-                    <div
-                        class="role"
-                        data-i18n="header.role">
-                        Ingeniero de Software Full-Stack · Angular · .NET · Python · QA Automation
-                    </div>
-                </div>
-                <div class="contact">
-                    <span
-                        ><b data-i18n="contact.tel">Tel.</b>
-                        <a
-                            href="https://wa.me/573185153771?text=Hola%20Christian%2C%20te%20contacto%20desde%20tu%20CV."
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            data-i18n-aria-label="contact.whatsappAria"
-                            aria-label="Escribir por WhatsApp al +57 318 515 3771"
-                            >+57 318 515 3771</a
-                        ></span
-                    >
-                    <span><a href="mailto:ccruzbarrera@gmail.com">ccruzbarrera@gmail.com</a></span>
-                    <span
-                        ><a
-                            href="https://linkedin.com/in/davidcdcb"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >linkedin.com/in/davidcdcb</a
-                        ></span
-                    >
-                    <span
-                        ><a
-                            href="https://github.com/DavidCDCB"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >github.com/DavidCDCB</a
-                        ></span
-                    >
-                    <span data-i18n="contact.country">Colombia</span>
-                </div>
-            </header>
-
-            <div class="highlights">
-                <div class="hl">
-                    <span class="num">4+</span
-                    ><span
-                        class="lbl"
-                        data-i18n="highlights.years"
-                        >Años de experiencia</span
-                    >
-                </div>
-                <div class="hl">
-                    <span class="num">1.177+</span
-                    ><span
-                        class="lbl"
-                        data-i18n="highlights.commits"
-                        >Commits en producción</span
-                    >
-                </div>
-                <div class="hl">
-                    <span class="num">119+</span
-                    ><span
-                        class="lbl"
-                        data-i18n="highlights.prs"
-                        >Pull Requests</span
-                    >
-                </div>
-                <div class="hl">
-                    <span class="num">3</span
-                    ><span
-                        class="lbl"
-                        data-i18n="highlights.areas"
-                        >Frentes: Front · Back · QA</span
-                    >
-                </div>
-                <div class="hl">
-                    <span
-                        class="num"
-                        data-i18n="highlights.millions"
-                        >Millones</span
-                    ><span
-                        class="lbl"
-                        data-i18n="highlights.endUsers"
-                        >De usuarios finales</span
-                    >
-                </div>
+        <div id="app" v-cloak>
+            <!-- Estado de error de carga de datos -->
+            <div
+                v-if="loadError"
+                class="mx-auto mt-16 max-w-xl rounded-lg border border-red-200 bg-red-50 p-6 text-center text-sm text-red-700">
+                No se pudo cargar <b>data/content.json</b>. Abre el proyecto con un servidor local
+                (por ejemplo, la extensión <b>Live Server</b> de VS Code) en lugar de hacer doble
+                clic sobre el archivo.
             </div>
 
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.profile">
-                    Perfil profesional
-                </h2>
-                <p
-                    class="summary"
-                    data-i18n-html="profile.summary">
-                    Ingeniero de Software Full-Stack con más de 4 años de experiencia construyendo aplicaciones web de
-                    alto tráfico en producción para el sector aeronáutico. Experiencia comprobada en
-                    <strong>desarrollo frontend con Angular 19 y TypeScript</strong>,
-                    <strong>backend con C# / .NET y Umbraco</strong> y
-                    <strong>automatización de pruebas (QA Automation / SDET) con Python y Selenium</strong>. Miembro
-                    fundador de la reescritura de una plataforma utilizada a diario por millones de pasajeros. Perfil
-                    orientado a código limpio, arquitecturas escalables, pruebas automatizadas y la aplicación práctica
-                    de la Inteligencia Artificial al desarrollo diario.
-                </p>
-            </section>
-
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.skills">
-                    Competencias técnicas
-                </h2>
-                <div class="skill-row">
-                    <span
-                        class="skill-cat"
-                        data-i18n="skills.languages.label"
-                        >Lenguajes</span
-                    ><span class="skill-val">C#, TypeScript, JavaScript, Python, SQL</span>
-                </div>
-                <div class="skill-row">
-                    <span
-                        class="skill-cat"
-                        data-i18n="skills.frontend.label"
-                        >Frontend</span
-                    ><span class="skill-val">Angular 19, RxJS, Angular Signals, Storybook, SCSS / Sass, HTML5</span>
-                </div>
-                <div class="skill-row">
-                    <span
-                        class="skill-cat"
-                        data-i18n="skills.backend.label"
-                        >Backend</span
-                    ><span class="skill-val">.NET 6, ASP.NET Core, Umbraco 10, Node.js, APIs REST</span>
-                </div>
-                <div class="skill-row">
-                    <span
-                        class="skill-cat"
-                        data-i18n="skills.qa.label"
-                        >QA / Testing</span
-                    ><span
-                        class="skill-val"
-                        data-i18n="skills.qa.value"
-                        >Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, pruebas unitarias y
-                        end-to-end</span
-                    >
-                </div>
-                <div class="skill-row">
-                    <span
-                        class="skill-cat"
-                        data-i18n="skills.data.label"
-                        >Datos e infra.</span
-                    ><span class="skill-val">SQL, SQLite, Redis, AWS (S3), Azure DevOps, CI/CD, Git</span>
-                </div>
-                <div class="skill-row">
-                    <span
-                        class="skill-cat"
-                        data-i18n="skills.ai.label"
-                        >IA & prácticas</span
-                    ><span
-                        class="skill-val"
-                        data-i18n="skills.ai.value"
-                        >Prompt Engineering, GitHub Copilot, arquitectura limpia/modular, i18n, accesibilidad (WCAG
-                        2.2), refactorización</span
-                    >
-                </div>
-            </section>
-
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.experience">
-                    Experiencia profesional
-                </h2>
-
-                <div class="company">
-                    <span class="company-name"
-                        >FLYR&nbsp;<span
-                            style="font-weight: 400; color: var(--soft); font-size: 9pt"
-                            data-i18n="experience.flyr.former"
-                            >(anteriormente Newshore)</span
-                        ></span
-                    >
-                    <span
-                        class="company-meta"
-                        data-i18n="experience.flyr.location"
-                        >Colombia · Híbrido</span
-                    >
+            <template v-else-if="c">
+                <!-- Barra de acciones (Tailwind) -->
+                <div class="print-bar no-print">
+                    <button
+                        type="button"
+                        class="language"
+                        @click="toggleLanguage">
+                        {{ c.meta.toggleLabel }}
+                    </button>
+                    <button
+                        type="button"
+                        class="secondary"
+                        :disabled="generatingPng"
+                        @click="downloadPng">
+                        {{ generatingPng ? c.ui.generatingPng : c.ui.downloadPng }}
+                    </button>
+                    <button
+                        type="button"
+                        :disabled="generatingPdf"
+                        @click="downloadPdf">
+                        {{ generatingPdf ? c.ui.generatingPdf : c.ui.downloadPdf }}
+                    </button>
                 </div>
 
-                <div class="exp-item">
-                    <div class="exp-head">
-                        <h3
-                            class="exp-role"
-                            data-i18n="experience.flyr.role1.title">
-                            Ingeniero de Software
-                        </h3>
-                        <span
-                            class="exp-date"
-                            data-i18n="experience.flyr.role1.date"
-                            >Diciembre 2023 – Presente</span
-                        >
+                <!-- Hoja del CV -->
+                <div class="sheet" ref="sheet">
+                    <header>
+                        <div>
+                            <h1 class="name">{{ c.header.name }}</h1>
+                            <div class="role">{{ c.header.role }}</div>
+                        </div>
+                        <div class="contact">
+                            <span
+                                ><b>{{ c.header.contact.telLabel }}</b>
+                                <a
+                                    :href="c.header.contact.whatsapp"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    :aria-label="c.header.contact.whatsappAria"
+                                    >{{ c.header.contact.phone }}</a
+                                ></span
+                            >
+                            <span
+                                ><a :href="'mailto:' + c.header.contact.email">{{
+                                    c.header.contact.email
+                                }}</a></span
+                            >
+                            <span
+                                ><a
+                                    :href="c.header.contact.linkedinUrl"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >{{ c.header.contact.linkedin }}</a
+                                ></span
+                            >
+                            <span
+                                ><a
+                                    :href="c.header.contact.githubUrl"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >{{ c.header.contact.github }}</a
+                                ></span
+                            >
+                            <span>{{ c.header.contact.country }}</span>
+                        </div>
+                    </header>
+
+                    <div class="highlights">
+                        <div class="hl" v-for="(h, i) in c.highlights" :key="i">
+                            <span class="num">{{ h.num }}</span
+                            ><span class="lbl">{{ h.lbl }}</span>
+                        </div>
                     </div>
-                    <ul class="bullets">
-                        <li data-i18n="experience.flyr.role1.b1">
-                            Miembro fundador de la reescritura completa (Angular 19, TypeScript) del portal web de venta
-                            de vuelos y check-in en línea de una de las principales aerolíneas de Latinoamérica, usado a
-                            diario por millones de pasajeros.
-                        </li>
-                        <li data-i18n="experience.flyr.role1.b2">
-                            Desarrollo full-stack con Angular, C# / .NET (Umbraco) y Python; definición de arquitectura
-                            modular y adopción de patrones actuales de Angular.
-                        </li>
-                        <li data-i18n="experience.flyr.role1.b3">
-                            Diseño e implementación de suites de pruebas automatizadas end-to-end (Python + Selenium,
-                            Page Object Model) y pruebas unitarias, reduciendo regresiones antes de producción.
-                        </li>
-                        <li data-i18n="experience.flyr.role1.b4">
-                            Construcción de herramientas internas (Node.js, Bash, PowerShell): simulador de backend,
-                            generadores de código, generador de datos de prueba y motor de ejecución por lotes.
-                        </li>
-                        <li data-i18n="experience.flyr.role1.b5">
-                            Integración de agentes de IA y prompt engineering (GitHub Copilot) para acelerar el
-                            onboarding y mantener las convenciones del proyecto.
-                        </li>
-                        <li data-i18n="experience.flyr.role1.b6">
-                            Reducción sistemática de deuda técnica y hallazgos de calidad (SonarQube); soporte
-                            multi-idioma (i18n) y accesibilidad (WCAG 2.2).
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="exp-item">
-                    <div class="exp-head">
-                        <h3
-                            class="exp-role"
-                            data-i18n="experience.flyr.role2.title">
-                            Desarrollador de Software
-                        </h3>
-                        <span
-                            class="exp-date"
-                            data-i18n="experience.flyr.role2.date"
-                            >Junio 2023 – Diciembre 2023</span
-                        >
-                    </div>
-                    <ul class="bullets">
-                        <li data-i18n="experience.flyr.role2.b1">
-                            Diseño y desarrollo de interfaces de usuario con Angular y metodologías modernas de
-                            frontend.
-                        </li>
-                        <li data-i18n="experience.flyr.role2.b2">
-                            Colaboración en la redefinición de procesos y flujos de trabajo de los equipos de
-                            desarrollo.
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.profile }}</h2>
+                        <p class="summary" v-html="c.profile"></p>
+                    </section>
 
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.projects">
-                    Proyectos destacados
-                </h2>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.skills }}</h2>
+                        <div class="skill-row" v-for="(s, i) in c.skills" :key="i">
+                            <span class="skill-cat">{{ s.cat }}</span
+                            ><span class="skill-val">{{ s.val }}</span>
+                        </div>
+                    </section>
 
-                <div class="proj-item">
-                    <div class="proj-head">
-                        <h3
-                            class="proj-name"
-                            data-i18n="projects.dcx.name">
-                            DCX UI+ — Portal web de aerolínea
-                        </h3>
-                        <span class="proj-role">Frontend Engineer</span>
-                    </div>
-                    <div class="proj-stack">Angular 19 · TypeScript · RxJS · Storybook</div>
-                    <p
-                        class="proj-desc"
-                        data-i18n="projects.dcx.desc">
-                        Miembro fundador de la reescritura completa del portal de venta de vuelos y check-in (836
-                        commits, 119+ PR). Módulo de pasajeros, herramientas internas de automatización e integración de
-                        agentes de IA.
-                    </p>
-                    <a
-                        class="proj-link"
-                        href="https://gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee"
-                        >gist.github.com/DavidCDCB/b2a1f2d1dfeda611a29bb702a9ff41ee</a
-                    >
-                </div>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.experience }}</h2>
 
-                <div class="proj-item">
-                    <div class="proj-head">
-                        <h3 class="proj-name">CMS Avianca (NS.Booking.Web)</h3>
-                        <span class="proj-role">Backend .NET</span>
-                    </div>
-                    <div class="proj-stack">C# · .NET 6 · Umbraco 10 · Prompt Engineering</div>
-                    <p
-                        class="proj-desc"
-                        data-i18n="projects.cms.desc">
-                        Desarrollo de componentes de backend del CMS empresarial que alimenta el portal, más un
-                        ecosistema de agentes de IA internos (+30 documentos de referencia) para acelerar el desarrollo
-                        y el onboarding.
-                    </p>
-                    <a
-                        class="proj-link"
-                        href="https://gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411"
-                        >gist.github.com/DavidCDCB/474a71c2064086fec3c540e26c1ec411</a
-                    >
-                </div>
+                        <div class="company">
+                            <span class="company-name"
+                                >{{ c.experience.company }}&nbsp;<span class="company-former"
+                                    >{{ c.experience.former }}</span
+                                ></span
+                            >
+                            <span class="company-meta">{{ c.experience.location }}</span>
+                        </div>
 
-                <div class="proj-item">
-                    <div class="proj-head">
-                        <h3 class="proj-name">Avianca QE Automation Suite</h3>
-                        <span class="proj-role">QA Automation / SDET</span>
-                    </div>
-                    <div class="proj-stack">Python · Selenium WebDriver · PyTest · Allure</div>
-                    <p
-                        class="proj-desc"
-                        data-i18n="projects.qe.desc">
-                        Suite de pruebas automatizadas end-to-end (305 commits, 20+ escenarios, patrón Page Object
-                        Model) con herramientas internas de generación de datos de prueba y ejecución por lotes con
-                        reintentos.
-                    </p>
-                    <a
-                        class="proj-link"
-                        href="https://gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5"
-                        >gist.github.com/DavidCDCB/0b559ed2b90f569b403863a8361d75d5</a
-                    >
-                </div>
-            </section>
+                        <div class="exp-item" v-for="(role, i) in c.experience.roles" :key="i">
+                            <div class="exp-head">
+                                <h3 class="exp-role">{{ role.title }}</h3>
+                                <span class="exp-date">{{ role.date }}</span>
+                            </div>
+                            <ul class="bullets">
+                                <li v-for="(b, j) in role.bullets" :key="j">{{ b }}</li>
+                            </ul>
+                        </div>
+                    </section>
 
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.courses">
-                    Cursos y certificados
-                </h2>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.projects }}</h2>
 
-                <div class="edu-item">
-                    <div class="edu-title">
-                        <a
-                            href="https://www.udemy.com/certificate/UC-6d318881-5582-47b8-b221-697d5541542f/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            data-i18n="courses.angular.title"
-                            >La Web Empieza Aquí: TypeScript, Angular, Storage, Firebase</a
-                        >
-                    </div>
-                    <div
-                        class="edu-meta"
-                        data-i18n="courses.angular.meta">
-                        Udemy · Tomas Garay · Mar. 2023
-                    </div>
-                </div>
+                        <div class="proj-item" v-for="(p, i) in c.projects" :key="i">
+                            <div class="proj-head">
+                                <h3 class="proj-name">{{ p.name }}</h3>
+                                <span class="proj-role">{{ p.role }}</span>
+                            </div>
+                            <div class="proj-stack">{{ p.stack }}</div>
+                            <p class="proj-desc">{{ p.desc }}</p>
+                            <a class="proj-link" :href="p.url">{{ p.link }}</a>
+                        </div>
+                    </section>
+                    
 
-                <div class="edu-item">
-                    <div class="edu-title">
-                        <a
-                            href="https://www.udemy.com/certificate/UC-f2d12c00-245e-4684-aff4-2bf2e1c37752/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            data-i18n="courses.flask.title"
-                            >Python y Flask. Desarrollo web y APIs tipo REST con Flask</a
-                        >
-                    </div>
-                    <div
-                        class="edu-meta"
-                        data-i18n="courses.flask.meta">
-                        Udemy · Redait Media · Mar. 2023
-                    </div>
-                </div>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.education }}</h2>
+                        <div class="edu-item" v-for="(e, i) in c.education" :key="i">
+                            <div class="edu-title">{{ e.title }}</div>
+                            <div class="edu-meta">{{ e.meta }}</div>
+                        </div>
+                    </section>
 
-                <div class="edu-item">
-                    <div class="edu-title">
-                        <a
-                            href="https://www.udemy.com/certificate/UC-56ee3c60-9c28-4f31-a3d5-128edf79ca51/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            data-i18n="courses.sql.title"
-                            >SQL: Creación de Bases de Datos (De cero a profesional)</a
-                        >
-                    </div>
-                    <div
-                        class="edu-meta"
-                        data-i18n="courses.sql.meta">
-                        Udemy · DataBoosters Academy · Mar. 2023
-                    </div>
-                </div>
-            </section>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.courses }}</h2>
 
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.education">
-                    Formación académica
-                </h2>
-                <div class="edu-item">
-                    <div
-                        class="edu-title"
-                        data-i18n="education.eng.title">
-                        Ingeniería en Sistemas y Computación
-                    </div>
-                    <div
-                        class="edu-meta"
-                        data-i18n="education.eng.meta">
-                        Universidad de Caldas · 2016 – 2023
-                    </div>
-                </div>
-                <div class="edu-item">
-                    <div
-                        class="edu-title"
-                        data-i18n="education.tech.title">
-                        Técnico Profesional en Desarrollo de Software
-                    </div>
-                    <div
-                        class="edu-meta"
-                        data-i18n="education.tech.meta">
-                        SENA · Sistemas de información · 2014 – 2015
-                    </div>
-                </div>
-            </section>
+                        <div class="edu-item" v-for="(course, i) in c.courses" :key="i">
+                            <div class="edu-title">
+                                <a :href="course.url" target="_blank" rel="noopener noreferrer"
+                                    >{{ course.title }}</a
+                                >
+                            </div>
+                            <div class="edu-meta">{{ course.meta }}</div>
+                        </div>
+                    </section>
 
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.languages">
-                    Idiomas
-                </h2>
-                <div class="inline-row">
-                    <span
-                        class="k"
-                        data-i18n="languages.spanish.k"
-                        >Español</span
-                    ><span
-                        class="v"
-                        data-i18n="languages.spanish.v"
-                        >Nativo</span
-                    >
-                </div>
-                <div class="inline-row">
-                    <span
-                        class="k"
-                        data-i18n="languages.english.k"
-                        >Inglés</span
-                    ><span
-                        class="v"
-                        data-i18n="languages.english.v"
-                        >Básico</span
-                    >
-                </div>
-            </section>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.languages }}</h2>
+                        <div class="inline-row" v-for="(l, i) in c.languages" :key="i">
+                            <span class="k">{{ l.k }}</span
+                            ><span class="v">{{ l.v }}</span>
+                        </div>
+                    </section>
 
-            <section>
-                <h2
-                    class="section-title"
-                    data-i18n="sections.softSkills">
-                    Aptitudes
-                </h2>
-                <p
-                    class="softskills"
-                    data-i18n="softSkills.list">
-                    Trabajo en equipo y comunicación · Autoaprendizaje y adaptabilidad · Iniciativa y proactividad ·
-                    Análisis y resolución de problemas · Planeación y organización · Compromiso y dedicación.
-                </p>
-            </section>
+                    <section>
+                        <h2 class="section-title">{{ c.sections.softSkills }}</h2>
+                        <p class="softskills">{{ c.softSkills }}</p>
+                    </section>
+                </div>
+            </template>
         </div>
 
+        <!-- Vue 3 (build global con compilador de templates) -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+        <!-- Librerías para exportar a PNG / PDF -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-        <script>
-            // Ancho A4 exacto en píxeles CSS a 96 DPI: 210mm * 96 / 25.4 ≈ 793.7 → 794
-            const A4_WIDTH_PX = 794;
-
-            /**
-             * Aplica los estilos de exportación, espera fuentes/layout y captura el .sheet.
-             * Devuelve el <canvas> resultante. Se encarga de limpiar el estado en cualquier caso.
-             */
-            async function captureSheetCanvas() {
-                document.body.classList.add('pdf-export');
-
-                try {
-                    if (document.fonts && document.fonts.ready) {
-                        await document.fonts.ready;
-                    }
-
-                    // Doble rAF: espera a que el navegador aplique el layout con la clase pdf-export
-                    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
-
-                    const element = document.querySelector('.sheet');
-
-                    return await html2canvas(element, {
-                        scale: 2,
-                        useCORS: true,
-                        letterRendering: true,
-                        backgroundColor: '#ffffff',
-                        width: A4_WIDTH_PX,
-                        windowWidth: A4_WIDTH_PX,
-                        x: 0,
-                        y: 0,
-                        scrollX: 0,
-                        scrollY: -window.scrollY,
-                    });
-                } finally {
-                    document.body.classList.remove('pdf-export');
-                }
-            }
-
-            /**
-             * Envuelve una función asíncrona con el estado "cargando" de un botón.
-             */
-            async function withButtonState(btn, loadingText, task) {
-                const originalText = btn.textContent;
-                btn.disabled = true;
-                btn.textContent = loadingText;
-                try {
-                    await task();
-                } catch (err) {
-                    console.error(err);
-                    alert(I18N.strings.buttons.errorGeneric);
-                } finally {
-                    btn.disabled = false;
-                    btn.textContent = originalText;
-                }
-            }
-
-            async function downloadPdf() {
-                const btn = document.getElementById('downloadPdfBtn');
-                await withButtonState(btn, I18N.strings.buttons.generatingPdf, async () => {
-                    const canvas = await captureSheetCanvas();
-
-                    const { jsPDF } = window.jspdf;
-                    const pdf = new jsPDF({
-                        unit: 'mm',
-                        format: 'a4',
-                        orientation: 'portrait',
-                        compress: true,
-                    });
-
-                    const pdfWidth = pdf.internal.pageSize.getWidth(); // 210
-                    const pdfHeight = pdf.internal.pageSize.getHeight(); // 297
-                    const imgWidth = pdfWidth;
-                    const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-                    const imgData = canvas.toDataURL('image/jpeg', 0.98);
-
-                    let heightLeft = imgHeight;
-                    let position = 0;
-
-                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined, 'FAST');
-                    heightLeft -= pdfHeight;
-
-                    while (heightLeft > 0) {
-                        position = heightLeft - imgHeight;
-                        pdf.addPage();
-                        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight, undefined, 'FAST');
-                        heightLeft -= pdfHeight;
-                    }
-
-                    pdf.save('Christian-David-Cruz-Barrera-CV.pdf');
-                });
-            }
-
-            async function downloadPng() {
-                const btn = document.getElementById('downloadPngBtn');
-                await withButtonState(btn, I18N.strings.buttons.generatingPng, async () => {
-                    const canvas = await captureSheetCanvas();
-
-                    // canvas.toBlob es más eficiente que toDataURL para archivos grandes
-                    const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
-
-                    const url = URL.createObjectURL(blob);
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.download = 'Christian-David-Cruz-Barrera-CV.png';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    URL.revokeObjectURL(url);
-                });
-            }
-
-            // ---------- Internacionalización dinámica ----------
-
-            /**
-             * Diccionario de traducciones. Cada clave es una ruta con notación de puntos
-             * que debe coincidir con el atributo data-i18n / data-i18n-html del HTML.
-             * El HTML se escribe en español (idioma base) y este objeto solo contiene la
-             * traducción a inglés.
-             */
-            const TRANSLATIONS = {
-                en: {
-                    'header.role': 'Full-Stack Software Engineer · Angular · .NET · Python · QA Automation',
-                    'contact.tel': 'Phone',
-                    'contact.country': 'Colombia',
-                    'contact.whatsappAria': 'Message on WhatsApp at +57 318 515 3771',
-
-                    'highlights.years': 'Years of experience',
-                    'highlights.commits': 'Production commits',
-                    'highlights.prs': 'Pull Requests',
-                    'highlights.areas': 'Areas: Front · Back · QA',
-                    'highlights.millions': 'Millions',
-                    'highlights.endUsers': 'Of end users',
-
-                    'sections.profile': 'Professional profile',
-                    'sections.skills': 'Technical skills',
-                    'sections.experience': 'Professional experience',
-                    'sections.projects': 'Featured projects',
-                    'sections.education': 'Education',
-                    'sections.languages': 'Languages',
-                    'sections.softSkills': 'Soft skills',
-
-                    'sections.courses': 'Courses & Certifications',
-
-                    'courses.angular.title': 'Getting Started with the Web: TypeScript, Angular, Storage, Firebase',
-                    'courses.angular.meta': 'Udemy · Tomas Garay · Mar. 2023',
-                    'courses.flask.title': 'Python and Flask: Web Development and REST APIs with Flask',
-                    'courses.flask.meta': 'Udemy · Redait Media · Mar. 2023',
-                    'courses.sql.title': 'SQL: Database Creation (From Zero to Professional)',
-                    'courses.sql.meta': 'Udemy · DataBoosters Academy · Mar. 2023',
-
-                    'sections.courses': 'Courses & Certifications',
-
-                    'courses.angular.title': 'Getting Started with the Web: TypeScript, Angular, Storage, Firebase',
-                    'courses.angular.meta': 'Udemy · Tomas Garay · Mar. 2023',
-                    'courses.flask.title': 'Python and Flask: Web Development and REST APIs with Flask',
-                    'courses.flask.meta': 'Udemy · Redait Media · Mar. 2023',
-                    'courses.sql.title': 'SQL: Database Creation (From Zero to Professional)',
-                    'courses.sql.meta': 'Udemy · DataBoosters Academy · Mar. 2023',
-
-                    'profile.summary':
-                        'Full-Stack Software Engineer with 4+ years of experience building high-traffic web ' +
-                        'applications in production for the airline industry. Proven experience in ' +
-                        '<strong>frontend development with Angular 19 and TypeScript</strong>, ' +
-                        '<strong>backend with C# / .NET and Umbraco</strong>, and ' +
-                        '<strong>test automation (QA Automation / SDET) with Python and Selenium</strong>. ' +
-                        'Founding member of the rewrite of a platform used daily by millions of passengers. ' +
-                        'Focused on clean code, scalable architectures, automated testing and the practical ' +
-                        'application of Artificial Intelligence to daily development.',
-
-                    'skills.languages.label': 'Languages',
-                    'skills.frontend.label': 'Frontend',
-                    'skills.backend.label': 'Backend',
-                    'skills.qa.label': 'QA / Testing',
-                    'skills.qa.value':
-                        'Selenium WebDriver, PyTest, NUnit, Allure, Page Object Model, unit and end-to-end tests',
-                    'skills.data.label': 'Data & infra.',
-                    'skills.ai.label': 'AI & practices',
-                    'skills.ai.value':
-                        'Prompt Engineering, GitHub Copilot, clean/modular architecture, i18n, accessibility (WCAG 2.2), refactoring',
-
-                    'experience.flyr.former': '(formerly Newshore)',
-                    'experience.flyr.location': 'Colombia · Hybrid',
-                    'experience.flyr.role1.title': 'Software Engineer',
-                    'experience.flyr.role1.date': 'December 2023 – Present',
-                    'experience.flyr.role1.b1':
-                        'Founding member of the full rewrite (Angular 19, TypeScript) of the flight booking and ' +
-                        'online check-in web portal of one of the leading airlines in Latin America, used daily ' +
-                        'by millions of passengers.',
-                    'experience.flyr.role1.b2':
-                        'Full-stack development with Angular, C# / .NET (Umbraco) and Python; modular ' +
-                        'architecture definition and adoption of current Angular patterns.',
-                    'experience.flyr.role1.b3':
-                        'Design and implementation of automated end-to-end test suites (Python + Selenium, Page ' +
-                        'Object Model) and unit tests, reducing regressions before production.',
-                    'experience.flyr.role1.b4':
-                        'Built internal tools (Node.js, Bash, PowerShell): backend simulator, code generators, ' +
-                        'test data generator, and batch execution engine.',
-                    'experience.flyr.role1.b5':
-                        'Integration of AI agents and prompt engineering (GitHub Copilot) to accelerate ' +
-                        'onboarding and enforce project conventions.',
-                    'experience.flyr.role1.b6':
-                        'Systematic reduction of technical debt and quality findings (SonarQube); multi-language ' +
-                        'support (i18n) and accessibility (WCAG 2.2).',
-                    'experience.flyr.role2.title': 'Software Developer',
-                    'experience.flyr.role2.date': 'June 2023 – December 2023',
-                    'experience.flyr.role2.b1':
-                        'Design and development of user interfaces with Angular and modern frontend methodologies.',
-                    'experience.flyr.role2.b2':
-                        'Collaboration in the redefinition of processes and workflows of the development teams.',
-
-                    'projects.dcx.name': 'DCX UI+ — Airline web portal',
-                    'projects.dcx.desc':
-                        'Founding member of the full rewrite of the flight booking and check-in portal (836 ' +
-                        'commits, 119+ PRs). Passengers module, internal automation tooling and AI agent integration.',
-                    'projects.cms.desc':
-                        'Development of backend components of the enterprise CMS that powers the portal, plus an ' +
-                        'ecosystem of internal AI agents (30+ reference documents) to accelerate development and onboarding.',
-                    'projects.qe.desc':
-                        'Automated end-to-end test suite (305 commits, 20+ scenarios, Page Object Model pattern) ' +
-                        'with internal tools for test data generation and batch execution with retries.',
-
-                    'education.eng.title': 'Systems and Computer Engineering',
-                    'education.eng.meta': 'Universidad de Caldas · 2016 – 2023',
-                    'education.tech.title': 'Professional Technician in Software Development',
-                    'education.tech.meta': 'SENA · Information Systems · 2014 – 2015',
-
-                    'languages.spanish.k': 'Spanish',
-                    'languages.spanish.v': 'Native',
-                    'languages.english.k': 'English',
-                    'languages.english.v': 'Basic',
-
-                    'softSkills.list':
-                        'Teamwork and communication · Self-learning and adaptability · Initiative and proactivity · ' +
-                        'Analysis and problem solving · Planning and organization · Commitment and dedication.',
-                },
-            };
-
-            /**
-             * Textos "estáticos" que usa la propia UI (no vienen del HTML) por idioma:
-             * títulos del documento, textos de botones, etc.
-             */
-            const UI_STRINGS = {
-                es: {
-                    title: 'Christian David Cruz Barrera — Ingeniero de Software Full-Stack (Angular, .NET, Python)',
-                    languageBtn: 'English Version',
-                    buttons: {
-                        downloadPdf: 'Descargar PDF',
-                        downloadPng: 'Descargar PNG',
-                        generatingPdf: 'Generando PDF...',
-                        generatingPng: 'Generando PNG...',
-                        errorGeneric: 'No se pudo generar el archivo. Intenta nuevamente.',
-                    },
-                },
-                en: {
-                    title: 'Christian David Cruz Barrera — Full-Stack Software Engineer (Angular, .NET, Python)',
-                    languageBtn: 'Versión en español',
-                    buttons: {
-                        downloadPdf: 'Download PDF',
-                        downloadPng: 'Download PNG',
-                        generatingPdf: 'Generating PDF...',
-                        generatingPng: 'Generating PNG...',
-                        errorGeneric: 'Could not generate the file. Please try again.',
-                    },
-                },
-            };
-
-            /**
-             * Estado global mínimo de i18n. Guardamos el idioma actual y el snapshot
-             * del contenido original en español para poder restaurar sin recargar.
-             */
-            const I18N = {
-                current: 'es',
-                originalSnapshot: null,
-                get strings() {
-                    return UI_STRINGS[this.current];
-                },
-            };
-
-            /**
-             * Captura el contenido español actual antes de aplicar cualquier traducción.
-             * Se ejecuta una sola vez, cuando se cambia de idioma por primera vez.
-             */
-            function snapshotOriginalContent() {
-                if (I18N.originalSnapshot) return;
-                const snapshot = {};
-                document.querySelectorAll('[data-i18n]').forEach((el) => {
-                    snapshot['text:' + el.dataset.i18n] = el.textContent;
-                });
-                document.querySelectorAll('[data-i18n-html]').forEach((el) => {
-                    snapshot['html:' + el.dataset.i18nHtml] = el.innerHTML;
-                });
-                document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
-                    snapshot['aria:' + el.dataset.i18nAriaLabel] = el.getAttribute('aria-label');
-                });
-                I18N.originalSnapshot = snapshot;
-            }
-
-            /**
-             * Aplica un idioma. Para 'es' restaura el snapshot original.
-             * Para 'en' aplica la tabla TRANSLATIONS.en usando el atributo data-i18n(-html|-aria-label).
-             */
-            function applyLanguage(lang) {
-                snapshotOriginalContent();
-
-                const dict = lang === 'es' ? null : TRANSLATIONS[lang];
-
-                document.querySelectorAll('[data-i18n]').forEach((el) => {
-                    const key = el.dataset.i18n;
-                    if (dict && dict[key] !== undefined) {
-                        el.textContent = dict[key];
-                    } else if (lang === 'es') {
-                        el.textContent = I18N.originalSnapshot['text:' + key];
-                    }
-                });
-
-                document.querySelectorAll('[data-i18n-html]').forEach((el) => {
-                    const key = el.dataset.i18nHtml;
-                    if (dict && dict[key] !== undefined) {
-                        el.innerHTML = dict[key];
-                    } else if (lang === 'es') {
-                        el.innerHTML = I18N.originalSnapshot['html:' + key];
-                    }
-                });
-
-                document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
-                    const key = el.dataset.i18nAriaLabel;
-                    if (dict && dict[key] !== undefined) {
-                        el.setAttribute('aria-label', dict[key]);
-                    } else if (lang === 'es') {
-                        el.setAttribute('aria-label', I18N.originalSnapshot['aria:' + key]);
-                    }
-                });
-
-                // Actualiza textos "propios" de la UI y metadatos del documento
-                const ui = UI_STRINGS[lang];
-                document.documentElement.lang = lang;
-                document.title = ui.title;
-                document.getElementById('languageBtn').textContent = ui.languageBtn;
-                document.getElementById('downloadPdfBtn').textContent = ui.buttons.downloadPdf;
-                document.getElementById('downloadPngBtn').textContent = ui.buttons.downloadPng;
-
-                I18N.current = lang;
-            }
-
-            function toggleLanguage() {
-                applyLanguage(I18N.current === 'es' ? 'en' : 'es');
-            }
-        </script>
+        <!-- App -->
+        <script src="./js/app.js"></script>
     </body>
 </html>

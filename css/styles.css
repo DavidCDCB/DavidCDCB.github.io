@@ -1,0 +1,433 @@
+:root {
+    --ink: #1a1a1a;
+    --strong: #000;
+    --muted: #5f6368;
+    --soft: #767676;
+    --line: #e4e4e4;
+    --rule: #c9c9c9;
+    --band: #f5f5f5;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+body {
+    background: #f3f3f4;
+    font-family:
+        'Inter',
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        sans-serif;
+    color: var(--ink);
+    line-height: 1.5;
+}
+
+/* [v-cloak] evita el parpadeo del template Vue sin compilar */
+[v-cloak] {
+    display: none;
+}
+
+.sheet {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 24px auto;
+    background: #fff;
+    padding: 17mm 18mm 16mm;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
+    font-size: 10.5pt;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    padding-bottom: 14px;
+    border-bottom: 1.5px solid var(--strong);
+}
+h1.name {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 500;
+    font-size: 27pt;
+    line-height: 1.05;
+    letter-spacing: 0.3px;
+    color: var(--strong);
+}
+.role {
+    margin-top: 6px;
+    font-size: 9.5pt;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.contact {
+    text-align: right;
+    font-size: 9pt;
+    line-height: 1.7;
+    color: var(--muted);
+    white-space: nowrap;
+}
+.contact a {
+    color: var(--muted);
+    text-decoration: none;
+}
+.contact span {
+    display: block;
+}
+.contact b {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* Franja de highlights */
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 9px 14px;
+    background: var(--band);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+}
+.hl {
+    text-align: center;
+    flex: 1;
+}
+.hl .num {
+    display: block;
+    font-weight: 700;
+    font-size: 12pt;
+    color: var(--strong);
+    font-variant-numeric: tabular-nums;
+}
+.hl .lbl {
+    font-size: 7.8pt;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--soft);
+}
+.hl + .hl {
+    border-left: 1px solid var(--line);
+}
+
+/* Secciones */
+section {
+    margin-top: 19px;
+}
+h2.section-title {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: var(--strong);
+    padding-bottom: 5px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid var(--line);
+}
+.summary {
+    color: #2c2c2c;
+    text-align: justify;
+}
+
+/* Skills */
+.skill-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 6px;
+    align-items: baseline;
+}
+.skill-row:last-child {
+    margin-bottom: 0;
+}
+.skill-cat {
+    flex: 0 0 132px;
+    font-size: 8.6pt;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.skill-val {
+    color: #2a2a2a;
+    flex: 1;
+}
+
+/* Experiencia */
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+}
+.company-name {
+    font-weight: 700;
+    font-size: 11pt;
+    color: var(--strong);
+}
+.company-former {
+    font-weight: 400;
+    color: var(--soft);
+    font-size: 9pt;
+}
+.company-meta {
+    font-size: 9pt;
+    color: var(--soft);
+}
+.exp-item {
+    margin-bottom: 13px;
+    break-inside: avoid;
+}
+.exp-item:last-child {
+    margin-bottom: 0;
+}
+.exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 6px 0 5px;
+}
+h3.exp-role {
+    font-weight: 600;
+    font-size: 10.5pt;
+}
+.exp-date {
+    font-size: 9pt;
+    color: var(--soft);
+    letter-spacing: 0.3px;
+}
+ul.bullets {
+    list-style: none;
+}
+ul.bullets li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 4px;
+    color: #2c2c2c;
+}
+ul.bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 4px;
+    height: 4px;
+    background: var(--rule);
+    border-radius: 50%;
+}
+
+/* Proyectos */
+.proj-item {
+    margin-bottom: 12px;
+    break-inside: avoid;
+}
+.proj-item:last-child {
+    margin-bottom: 0;
+}
+.proj-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+}
+h3.proj-name {
+    font-weight: 700;
+    font-size: 10.5pt;
+    color: var(--strong);
+}
+.proj-role {
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--soft);
+    white-space: nowrap;
+}
+.proj-stack {
+    font-size: 8.6pt;
+    letter-spacing: 0.4px;
+    color: var(--muted);
+    margin: 2px 0 3px;
+}
+.proj-desc {
+    color: #2c2c2c;
+    margin-bottom: 3px;
+}
+.proj-link {
+    font-size: 8.6pt;
+    color: var(--muted);
+    text-decoration: none;
+    word-break: break-all;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Formación / Idiomas / Aptitudes */
+.edu-item {
+    margin-bottom: 9px;
+    break-inside: avoid;
+}
+.edu-item:last-child {
+    margin-bottom: 0;
+}
+.edu-title {
+    font-weight: 600;
+}
+.edu-title a {
+    color: inherit;
+    text-decoration: none;
+}
+.edu-title a:hover {
+    text-decoration: underline;
+}
+.edu-meta {
+    font-size: 9pt;
+    color: var(--soft);
+    margin-top: 1px;
+}
+.inline-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+.inline-row .k {
+    flex: 0 0 132px;
+    font-weight: 600;
+}
+.inline-row .v {
+    color: var(--soft);
+}
+.softskills {
+    color: #2c2c2c;
+}
+
+/* Botones descarga */
+.print-bar {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+.print-bar button {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--ink);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    transition: background 0.15s ease;
+}
+.print-bar button:hover {
+    background: #000;
+}
+.print-bar button.secondary {
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--rule);
+}
+.print-bar button.secondary:hover {
+    background: #f0f0f0;
+}
+.print-bar button.language {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+}
+.print-bar button.language:hover {
+    background: var(--ink);
+    color: #fff;
+}
+.print-bar button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+@page {
+    size: A4;
+    margin: 14mm 15mm;
+}
+/* Estado activo mientras se genera el PDF (aplicado por JS a <body>) */
+body.pdf-export {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+body.pdf-export .sheet {
+    width: 794px !important; /* 210mm exactos a 96 DPI */
+    margin: 0 !important;
+    box-shadow: none !important;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+body.pdf-export .no-print {
+    display: none !important;
+}
+@media print {
+    body {
+        background: #fff;
+    }
+    .sheet {
+        width: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        font-size: 10pt;
+    }
+    .no-print {
+        display: none !important;
+    }
+    a {
+        color: inherit;
+    }
+    section {
+        break-inside: avoid;
+    }
+    .highlights {
+        background: var(--band) !important;
+    }
+}
+@media (max-width: 640px) {
+    .sheet {
+        width: 100%;
+        padding: 22px 20px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .contact {
+        text-align: left;
+        white-space: normal;
+    }
+    .highlights {
+        flex-wrap: wrap;
+    }
+    .skill-row,
+    .inline-row {
+        flex-direction: column;
+        gap: 1px;
+    }
+    .skill-cat,
+    .inline-row .k {
+        flex-basis: auto;
+    }
+}
