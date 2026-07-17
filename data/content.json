@@ -43,7 +43,7 @@
             "courses": "Cursos y certificados",
             "education": "Formación académica",
             "languages": "Idiomas",
-            "softSkills": "Aptitudes"
+            "softSkills": "Liderazgo y aptitudes"
         },
         "profile": "Ingeniero de Software Full-Stack con más de 4 años de experiencia construyendo aplicaciones web de misión crítica y alto tráfico para el sector aeronáutico, usadas a diario por millones de pasajeros. Miembro fundador de la reescritura de la plataforma de Avianca, con experiencia comprobada en <strong>frontend con Angular 20 y TypeScript</strong>, <strong>backend con C# / .NET y Umbraco</strong> y <strong>automatización de pruebas (QA Automation / SDET) con Python y Selenium</strong>. Pionero en la organización en la <strong>aplicación de IA y prompt engineering al desarrollo diario</strong>. Orientado a código limpio, arquitecturas escalables, pruebas automatizadas y la reducción sistemática de deuda técnica.",
         "skills": [
@@ -139,7 +139,7 @@
             { "k": "Español", "v": "Nativo" },
             { "k": "Inglés", "v": "Básico (A2 MCER) · lectura técnica" }
         ],
-        "softSkills": "Trabajo en equipo y comunicación · Autoaprendizaje y adaptabilidad · Iniciativa y proactividad · Análisis y resolución de problemas · Planeación y organización · Compromiso y dedicación."
+        "softSkills": "Liderazgo técnico y mentoría a desarrolladores nuevos · Planeación y organización de equipos · Trabajo en equipo y comunicación · Iniciativa y proactividad · Análisis y resolución de problemas · Autoaprendizaje y adaptabilidad."
     },
     "en": {
         "meta": {
@@ -185,7 +185,7 @@
             "courses": "Courses & Certifications",
             "education": "Education",
             "languages": "Languages",
-            "softSkills": "Soft skills"
+            "softSkills": "Leadership & soft skills"
         },
         "profile": "Full-Stack Software Engineer with 4+ years of experience building mission-critical, high-traffic web applications for the airline industry, used daily by millions of passengers. Founding member of the rewrite of Avianca's platform, with proven experience in <strong>frontend with Angular 20 and TypeScript</strong>, <strong>backend with C# / .NET and Umbraco</strong>, and <strong>test automation (QA Automation / SDET) with Python and Selenium</strong>. Pioneer within the organization in <strong>applying AI and prompt engineering to daily development</strong>. Focused on clean code, scalable architectures, automated testing and systematic reduction of technical debt.",
         "skills": [
@@ -281,6 +281,6 @@
             { "k": "Spanish", "v": "Native" },
             { "k": "English", "v": "Basic (A2 CEFR) · technical reading" }
         ],
-        "softSkills": "Teamwork and communication · Self-learning and adaptability · Initiative and proactivity · Analysis and problem solving · Planning and organization · Commitment and dedication."
+        "softSkills": "Technical leadership and mentoring of new developers · Team planning and organization · Teamwork and communication · Initiative and proactivity · Analysis and problem solving · Self-learning and adaptability."
     }
 }
