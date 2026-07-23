@@ -61,7 +61,7 @@
             "roles": [
                 {
                     "title": "Ingeniero de Software",
-                    "date": "Diciembre 2023 – Presente",
+                    "date": "Diciembre 2023 – Agosto 2026",
                     "bullets": [
                         "Miembro fundador de la reescritura de la plataforma web de Avianca (Angular 20, TypeScript), usada a diario por millones de pasajeros: 100+ funcionalidades y 61 refactorizaciones entregadas en más de 20 módulos de negocio (pasajeros, asientos, pagos, tarjeta de embarque, lealtad).",
                         "Responsable del módulo de pasajeros —uno de los más complejos del sistema (580+ archivos)— con validaciones dinámicas por tipo de viajero y del flujo de check-in gestionado; aportes a librerías compartidas, capa de APIs y design system que sostienen todo el portal.",
@@ -203,7 +203,7 @@
             "roles": [
                 {
                     "title": "Software Engineer",
-                    "date": "December 2023 – Present",
+                    "date": "December 2023 – August 2026",
                     "bullets": [
                         "Founding member of the rewrite of Avianca's web platform (Angular 20, TypeScript), used daily by millions of passengers: 100+ features and 61 refactors delivered across 20+ business modules (passengers, seats, payments, boarding pass, loyalty).",
                         "Owner of the passengers module —one of the most complex in the system (580+ files)— with dynamic validations per traveler type and of the managed check-in flow; contributions to shared libraries, the API layer and the design system that underpin the whole portal.",
