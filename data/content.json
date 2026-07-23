@@ -115,6 +115,11 @@
                 "meta": "Consejo Profesional Nacional de Ingeniería · Cert. 051210-0746434 CLD"
             },
             {
+                "title": "IA Generativa para Desarrolladores de Software (Especialización)",
+                "url": "https://www.coursera.org/account/accomplishments/specialization/YRDR59FFTJR0",
+                "meta": "Coursera · IBM · 3 cursos (Intro a IA Generativa, Prompt Engineering, Elevar tu carrera con IA)"
+            },
+            {
                 "title": "La Web Empieza Aquí: TypeScript, Angular, Storage, Firebase",
                 "url": "https://www.udemy.com/certificate/UC-6d318881-5582-47b8-b221-697d5541542f/",
                 "meta": "Udemy · Tomas Garay · Mar. 2023"
@@ -260,6 +265,11 @@
                 "title": "Professional Engineering Certification (Copnia)",
                 "url": "https://tramites.copnia.gov.co/Copnia_Microsite/CertificateOfGoodStanding/WaterMarkmethod?CertificateNumber=051210-0746434%20CLD",
                 "meta": "National Professional Council of Engineering · Cert. 051210-0746434 CLD"
+            },
+            {
+                "title": "Generative AI for Software Developers (Specialization)",
+                "url": "https://www.coursera.org/account/accomplishments/specialization/YRDR59FFTJR0",
+                "meta": "Coursera · IBM · 3 courses (Intro to Generative AI, Prompt Engineering, Elevate Your Career)"
             },
             {
                 "title": "Getting Started with the Web: TypeScript, Angular, Storage, Firebase",
